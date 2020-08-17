@@ -1,0 +1,63 @@
+
+V	java:S110/"<This class has 9 parents which is greater than 5 authorized.(•«ú§üÿÿÿÿ
+l	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¡úĞüÿÿÿÿ
+g	java:S117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è£Í
+f	java:S117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àĞá3
+l	java:S117Ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÑå£üÿÿÿÿ
+l	java:S117Ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íòıŒıÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª­Î‡ıÿÿÿÿ
+>
+java:S1604H"(Make this anonymous inner class a lambda(¸‚õ
+?
+java:S1604­"(Make this anonymous inner class a lambda(şõÕ²
+D
+java:S1604ß"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+?
+java:S1604î"(Make this anonymous inner class a lambda(¸‚õ
+o
+java:S14506"YRemove the "btn_forgot" field and declare it as a local variable in the relevant methods.(ñ „Å
+i
+java:S30080"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—­„òÿÿÿÿÿ
+A
+java:S16595"&Declare "et_email" on a separate line.(ûØç›ûÿÿÿÿ
+<
+java:S16596"&Declare "tv_email" on a separate line.(ñ „Å
+>
+java:S16596"(Declare "btn_forgot" on a separate line.(ñ „Å
+k	java:S1164"WRename this field "btn_continue" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÂ®w
+p	java:S1165"VRename this field "et_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûØç›ûÿÿÿÿ
+m	java:S1165"SRename this field "et_email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûØç›ûÿÿÿÿ
+k	java:S1166"VRename this field "tv_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ „Å
+h	java:S1166"SRename this field "tv_email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ „Å
+j	java:S1166"URename this field "btn_forgot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ „Å
+L
+java:S18742"6Remove this use of "ProgressDialog"; it is deprecated.(ğİıº
+Q
+java:S1874Z"6Remove this use of "ProgressDialog"; it is deprecated.(¿Ú•ğúÿÿÿÿ
+H
+java:S1874["2Remove this use of "setMessage"; it is deprecated.(ç‡ŸÇ
+K
+java:S1874m"0Remove this use of "getColor"; it is deprecated.(‚‰ıøÿÿÿÿ
+E
+java:S1874n"0Remove this use of "getColor"; it is deprecated.(ßœ_
+K
+java:S1874t"0Remove this use of "getColor"; it is deprecated.(‚‰ıøÿÿÿÿ
+K
+java:S1874y"0Remove this use of "getColor"; it is deprecated.(‚‰ıøÿÿÿÿ
+F
+java:S1874€"0Remove this use of "getColor"; it is deprecated.(ßœ_
+F
+java:S1874…"0Remove this use of "getColor"; it is deprecated.(ßœ_
+I
+java:S1135˜"2Complete the task associated to this TODO comment.(¼í 
+I
+java:S1135"2Complete the task associated to this TODO comment.(¼í 
+i
+java:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ş Üê
+u
+java:S2293¨"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+V	java:S125A"<This block of commented-out lines of code should be removed.(Ïğóºÿÿÿÿÿ
+Q	java:S125D"<This block of commented-out lines of code should be removed.(î‘©õ
+Q	java:S125F"<This block of commented-out lines of code should be removed.(¡Œÿ
+R	java:S125Í"<This block of commented-out lines of code should be removed.(Èâ¶¿
+W	java:S125Ö"<This block of commented-out lines of code should be removed.(ÃŞÖŒÿÿÿÿÿ

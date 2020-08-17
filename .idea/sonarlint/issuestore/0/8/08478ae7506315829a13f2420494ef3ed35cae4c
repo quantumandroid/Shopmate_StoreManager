@@ -1,0 +1,12 @@
+
+w	java:S116T"VRename this field "assign_recy" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ«åûÿÿÿÿ8õ©÷¸.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã’ê³
+t	java:S116]"XRename this field "unAssign_recy" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø©€ç8õ©÷¸.
+h
+java:S1301E"KReplace this "switch" statement by "if" statements to increase readability.( ÔË8õ©÷¸.
+C	java:S1312""Add a default case to this switch.(ñ­“ÿÿÿÿÿ8õ©÷¸.
+>	java:S131E""Add a default case to this switch.( ÔË8õ©÷¸.
+Q
+java:S3740"/Provide the parametrized type for this generic.(—óãºùÿÿÿÿ8õ©÷¸.
+m
+java:S13012"KReplace this "switch" statement by "if" statements to increase readability.(ñ­“ÿÿÿÿÿ8õ©÷¸.

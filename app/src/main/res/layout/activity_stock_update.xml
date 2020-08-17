@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/RobotoBoldTextAppearance"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pur_pr"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_XX_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_filter"
+                android:orientation="vertical">
+
+
+                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                    android:id="@+id/tv_pro_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:gravity="center"
+                    android:text="@string/nav_Products"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                    android:id="@+id/et_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@drawable/xml_textbox_bg"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Product"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                    android:id="@+id/tv_pro_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:gravity="center"
+                    android:text="@string/tv_order_qty"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@drawable/xml_textbox_bg"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Qty"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:textColorHint="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                    android:id="@+id/tv_pro_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:gravity="center"
+                    android:text="@string/unit"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/et_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@drawable/xml_textbox_bg"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="KG/BAG/NOS/QTY/etc"
+                    android:textColorHint="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btn_add_product"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/bg_rounded_button"
+                android:padding="12dp">
+
+                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Update Stock"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

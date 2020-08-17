@@ -1,0 +1,20 @@
+
+a
+java:S2184("FCast one of the operands of this multiplication operation to a "long".(ëÍÝõþÿÿÿÿ
+V	java:S110"<This class has 9 parents which is greater than 5 authorized.(äŽÊãøÿÿÿÿ
+C
+java:S1604^"(Make this anonymous inner class a lambda(íÍà©þÿÿÿÿ
+C
+java:S1604d"(Make this anonymous inner class a lambda(Ô¥¬ˆúÿÿÿÿ
+k
+java:S1450"URemove the "dialog" field and declare it as a local variable in the relevant methods.(ÿ›ÿ
+P
+java:S1161$":Add the "@Override" annotation above this method signature(“–ýþ
+1
+java:S3626l"Remove this redundant jump.(ûÁÝ…
+S
+java:S1197V"8Move the array designator from the variable to the type.(ÿÃ²þÿÿÿÿ
+c	java:S100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü»· 
+@
+java:S1068"*Remove this unused "dialog" private field.(ÿ›ÿ
+Q	java:S125|"<This block of commented-out lines of code should be removed.(áÓê

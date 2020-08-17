@@ -1,0 +1,300 @@
+
+>	java:S131´
+""Add a default case to this switch.(íÈåB8·ÂÔ÷¸.
+”
+java:S1192¬"vDefine a constant instead of duplicating this literal "No Printer Attach to the Device, Attach device first!" 4 times.(â·ÿä8·ÂÔ÷¸.
+L
+java:S5413“")Verify that "remove()" is used correctly.(æ³”øÿÿÿÿ8·ÂÔ÷¸.
+K
+java:S1185Ë"(Remove this method to simply inherit it.(™Î«şÿÿÿÿ8·ÂÔ÷¸.
+u
+java:S3776·"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(š‚½ßşÿÿÿÿ8·ÂÔ÷¸.
+f
+java:S1192Ô"HDefine a constant instead of duplicating this literal "sale_id" 3 times.(ÓÄÎ8ˆù±÷¸.
+]	java:S125i"<This block of commented-out lines of code should be removed.(š¸ç›ıÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Ô"<This block of commented-out lines of code should be removed.(ş³«ûÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Ä
+"<This block of commented-out lines of code should be removed.(ÓÒ×ğÿÿÿÿÿ8·ÂÔ÷¸.
+S
+java:S1481Ğ"5Remove this unused "connected_device" local variable.(ÅÙø»8·ÂÔ÷¸.
+T
+java:S1481¸"1Remove this unused "tag_json_obj" local variable.(½¡úĞüÿÿÿÿ8·ÂÔ÷¸.
+I
+java:S1068"+Remove this unused "mHeight" private field.(šÏ£8·ÂÔ÷¸.
+^	java:S125ô"<This block of commented-out lines of code should be removed.(ÓÒ×ğÿÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125¸"<This block of commented-out lines of code should be removed.(úà¢8·ÂÔ÷¸.
+^	java:S125³"<This block of commented-out lines of code should be removed.(‚ÀŞºûÿÿÿÿ8·ÂÔ÷¸.
+|
+java:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(ºÓÁ½şÿÿÿÿ8êÌÇù¸.
+Y	java:S125¬"<This block of commented-out lines of code should be removed.(°Ôû8·ÂÔ÷¸.
+X	java:S125è"<This block of commented-out lines of code should be removed.(¼ô†8·ÂÔ÷¸.
+K
+java:S1604â	"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ8·ÂÔ÷¸.
+s	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù„øÿÿÿÿ8·ÂÔ÷¸.
+\
+java:S1155ã">Use isEmpty() to check whether the collection is empty or not.(€ÿæè8·ÂÔ÷¸.
+|
+java:S2293š	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ8·ÂÔ÷¸.
+P
+java:S1874º"2Remove this use of "setMessage"; it is deprecated.(‚ç¡×8·ÂÔ÷¸.
+^	java:S125 "<This block of commented-out lines of code should be removed.(ŒÓĞùÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125®"<This block of commented-out lines of code should be removed.(©ÊğÀ8·ÂÔ÷¸.
+x
+java:S1450ˆ"ZRemove the "myBtAdapter" field and declare it as a local variable in the relevant methods.(ÆÑÈ8·ÂÔ÷¸.
+a
+java:S1155Â">Use isEmpty() to check whether the collection is empty or not.(èÄçòÿÿÿÿÿ8êÌÇù¸.
+^	java:S125¡"<This block of commented-out lines of code should be removed.(Ğ‹‡©ûÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Æ"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8·ÂÔ÷¸.
+|
+java:S2293–"YReplace the type specification in this constructor call with the diamond operator ("<>").(–½©ºùÿÿÿÿ8·ÂÔ÷¸.
+|
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ8·ÂÔ÷¸.
+c
+java:S1854ú"@Remove this useless assignment to local variable "tag_json_obj".(½¡úĞüÿÿÿÿ8·ÂÔ÷¸.
+T
+java:S1481ú"1Remove this unused "tag_json_obj" local variable.(½¡úĞüÿÿÿÿ8·ÂÔ÷¸.
+n	java:S101]"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(şö£’ûÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125á
+"<This block of commented-out lines of code should be removed.(´„Èì8·ÂÔ÷¸.
+i
+java:S1192´"FDefine a constant instead of duplicating this literal "today" 3 times.(Ä’×õıÿÿÿÿ8·ÂÔ÷¸.
+|
+java:S2293ê"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125š"<This block of commented-out lines of code should be removed.(ª„ëª8·ÂÔ÷¸.
+g
+java:S1192¡"IDefine a constant instead of duplicating this literal "SubTotal" 7 times.(ÿ¾å¡8·ÂÔ÷¸.
+n	java:S117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÙø»8·ÂÔ÷¸.
+Z
+java:S2589¼"7Remove this expression which always evaluates to "true"(ûëù«øÿÿÿÿ8·ÂÔ÷¸.
+K
+java:S1604è"(Make this anonymous inner class a lambda(¾Ñ»şÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125¬"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8·ÂÔ÷¸.
+R
+java:S1068o"0Remove this unused "linearLayout" private field.(Ãîìêúÿÿÿÿ8·ÂÔ÷¸.
+X	java:S125¢"<This block of commented-out lines of code should be removed.(¸ë¢&8·ÂÔ÷¸.
+^	java:S125¨"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8·ÂÔ÷¸.
+	java:S116"]Rename this field "session_management" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«éØíüÿÿÿÿ8·ÂÔ÷¸.
+V	java:S106è	"9Replace this use of System.out or System.err by a logger.(ÿÉë£8·ÂÔ÷¸.
+^	java:S125€"<This block of commented-out lines of code should be removed.(äœñ¼ùÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125ª"<This block of commented-out lines of code should be removed.(Å¯ßá8·ÂÔ÷¸.
+Y	java:S125º"<This block of commented-out lines of code should be removed.(ïš—8·ÂÔ÷¸.
+{
+java:S1450}"^Remove the "selectedAddress" field and declare it as a local variable in the relevant methods.(Œ­ŞŠ8·ÂÔ÷¸.
+}	java:S116j"aRename this field "my_today_order_adapter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŸÉ…8è‰Å÷¸.
+K
+java:S1604Ñ"(Make this anonymous inner class a lambda(¥¸Ë€ıÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Æ"<This block of commented-out lines of code should be removed.(©Ëûßıÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125¤"<This block of commented-out lines of code should be removed.(şÌÑ‰ùÿÿÿÿ8·ÂÔ÷¸.
+F
+java:S1604ş"(Make this anonymous inner class a lambda(Óüæ8·ÂÔ÷¸.
+^	java:S125¨	"<This block of commented-out lines of code should be removed.(¼˜ïÛÿÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125¨"<This block of commented-out lines of code should be removed.(°«•öøÿÿÿÿ8·ÂÔ÷¸.
+K
+java:S1604	"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Ï
+"<This block of commented-out lines of code should be removed.(£‘»èùÿÿÿÿ8·ÂÔ÷¸.
+K
+java:S1068Š"(Remove this unused "bill" private field.(³ğ¿«üÿÿÿÿ8·ÂÔ÷¸.
+u
+java:S3776¹"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ôµİ©şÿÿÿÿ8·ÂÔ÷¸.
+t	java:S116~"SRename this field "swipe_to" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äúÿÿúÿÿÿÿ8è‰Å÷¸.
+m
+java:S1192Ö"ODefine a constant instead of duplicating this literal "customer_phone" 3 times.(¦…ÜÄ8·ÂÔ÷¸.
+F
+java:S1604Ñ"(Make this anonymous inner class a lambda(ÛÚÆ 8êÌÇù¸.
+K
+java:S1604ö"(Make this anonymous inner class a lambda(·éçÆùÿÿÿÿ8·ÂÔ÷¸.
+X	java:S125é"<This block of commented-out lines of code should be removed.(£•ò8·ÂÔ÷¸.
+K	java:S108Û")Either remove or fill this block of code.(¼œ…øıÿÿÿÿ8·ÂÔ÷¸.
+p
+java:S3776”"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(«ÃÀ÷8·ÂÔ÷¸.
+U
+java:S1874ú"2Remove this use of "setMessage"; it is deprecated.(€Ûµ«ûÿÿÿÿ8·ÂÔ÷¸.
+p	java:S100û"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µğé‰úÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125"<This block of commented-out lines of code should be removed.(”Ã‡ÿúÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125à"<This block of commented-out lines of code should be removed.(ÓÒ×ğÿÿÿÿÿ8·ÂÔ÷¸.
+j
+java:S1192Ü"GDefine a constant instead of duplicating this literal "status" 5 times.(¾À‰îûÿÿÿÿ8·ÂÔ÷¸.
+K
+java:S1604–"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ8·ÂÔ÷¸.
+[	java:S106¥"9Replace this use of System.out or System.err by a logger.(€¤é×üÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125ë"<This block of commented-out lines of code should be removed.(ˆı™ñ8·ÂÔ÷¸.
+f
+java:S1192š"HDefine a constant instead of duplicating this literal "Error [" 4 times.(ÿÉë£8·ÂÔ÷¸.
+k
+java:S1192Û"HDefine a constant instead of duplicating this literal "address" 3 times.(æºØ°øÿÿÿÿ8è‰Å÷¸.
+K
+java:S1604ÿ"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ8·ÂÔ÷¸.
+X	java:S125¼"<This block of commented-out lines of code should be removed.(úÀ¶Y8·ÂÔ÷¸.
+k
+java:S1192Ú"HDefine a constant instead of duplicating this literal "ammount" 3 times.(£´¨çşÿÿÿÿ8ˆù±÷¸.
+a
+java:S1155¸	">Use isEmpty() to check whether the collection is empty or not.(„ü¬µÿÿÿÿÿ8êÌÇù¸.
+|
+java:S2293î	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125 "<This block of commented-out lines of code should be removed.(–šÛğşÿÿÿÿ8·ÂÔ÷¸.
+n	java:S117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù˜¹»8·ÂÔ÷¸.
+^	java:S125Œ"<This block of commented-out lines of code should be removed.(‹†ïÍúÿÿÿÿ8·ÂÔ÷¸.
+^
+java:S1068k"<Remove this unused "my_nextday_order_adapter" private field.(ó€İ¡øÿÿÿÿ8·ÂÔ÷¸.
+c
+java:S1854¸"@Remove this useless assignment to local variable "tag_json_obj".(½¡úĞüÿÿÿÿ8·ÂÔ÷¸.
+b
+java:S1854Ğ"DRemove this useless assignment to local variable "connected_device".(ÅÙø»8·ÂÔ÷¸.
+s	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¡úĞüÿÿÿÿ8·ÂÔ÷¸.
+¤
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£µ¢›ÿÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Ï"<This block of commented-out lines of code should be removed.(ÿÙÖøÿÿÿÿ8·ÂÔ÷¸.
+X	java:S125˜"<This block of commented-out lines of code should be removed.(ğ½öL8·ÂÔ÷¸.
+F
+java:S1604Ç	"(Make this anonymous inner class a lambda(– ûÙ8·ÂÔ÷¸.
+N
+java:S1068x"1Remove this unused "mArrayAdapter" private field.(¿Û‡8·ÂÔ÷¸.
+Y	java:S125«"<This block of commented-out lines of code should be removed.(Ë÷Ññ8·ÂÔ÷¸.
+V	java:S106š"9Replace this use of System.out or System.err by a logger.(ÿÉë£8·ÂÔ÷¸.
+Y	java:S125…"<This block of commented-out lines of code should be removed.(½í×±8·ÂÔ÷¸.
+Y	java:S125Ó"<This block of commented-out lines of code should be removed.(¢Şœÿ8·ÂÔ÷¸.
+^	java:S125æ"<This block of commented-out lines of code should be removed.(×÷„­üÿÿÿÿ8·ÂÔ÷¸.
+F
+java:S1185"(Remove this method to simply inherit it.(ßìê¯8·ÂÔ÷¸.
+n	java:S117ı"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÕÑ’8·ÂÔ÷¸.
+d
+java:S1192Æ"FDefine a constant instead of duplicating this literal "TOTAL" 7 times.(Æ¤Ğ¼8·ÂÔ÷¸.
+Y	java:S125Ÿ"<This block of commented-out lines of code should be removed.(–¹´ó8·ÂÔ÷¸.
+^	java:S125‘"<This block of commented-out lines of code should be removed.(şÓÈåüÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125‡"<This block of commented-out lines of code should be removed.(ÓÒ×ğÿÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125ä"<This block of commented-out lines of code should be removed.(‹¤€£8·ÂÔ÷¸.
+X	java:S125Ò"<This block of commented-out lines of code should be removed.(£•ò8·ÂÔ÷¸.
+Y	java:S125¾"<This block of commented-out lines of code should be removed.(â»¾Ï8·ÂÔ÷¸.
+Y	java:S125û"<This block of commented-out lines of code should be removed.(Ë´ï8·ÂÔ÷¸.
+K
+java:S1604Ú"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Ü"<This block of commented-out lines of code should be removed.(™°ŸÅúÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125Æ	"<This block of commented-out lines of code should be removed.(ğèˆé8·ÂÔ÷¸.
+m	java:S116v"QRename this field "boy_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÔòë8·ÂÔ÷¸.
+s	java:S117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¡úĞüÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125’"<This block of commented-out lines of code should be removed.(Ö„ÍĞÿÿÿÿÿ8·ÂÔ÷¸.
+|
+java:S2293Œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(Æ¸¨ìÿÿÿÿÿ8êÌÇù¸.
+
+java:S1192ò"pDefine a constant instead of duplicating this literal "-----------------------------------------------" 7 times.(ğÆ©78·ÂÔ÷¸.
+q
+java:S1192Õ"NDefine a constant instead of duplicating this literal "user_fullname" 3 times.(ö½şïûÿÿÿÿ8è‰Å÷¸.
+^	java:S125‚"<This block of commented-out lines of code should be removed.(ìÿö‚ùÿÿÿÿ8·ÂÔ÷¸.
+n	java:S117ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÕÑ’8·ÂÔ÷¸.
+Y	java:S125ò"<This block of commented-out lines of code should be removed.(°±ÉÌ8·ÂÔ÷¸.
+?
+java:S1643Ì"Use a StringBuilder instead.(Şıº–ùÿÿÿÿ8·ÂÔ÷¸.
+Q
+java:S1172ö".Remove this unused method parameter "cart_id".(éÇñòûÿÿÿÿ8·ÂÔ÷¸.
+a
+java:S1155à">Use isEmpty() to check whether the collection is empty or not.(èÄçòÿÿÿÿÿ8êÌÇù¸.
+v	java:S116"URename this field "newCart_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¥ãùÿÿÿÿ8·ÂÔ÷¸.
+f
+java:S1192Ù"HDefine a constant instead of duplicating this literal "cart_id" 6 times.(õÁê¼8‘ó§÷¸.
+V
+java:S1144Ù"3Remove this unused private "leftRightAlign" method.(÷îÖ³ÿÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125±"<This block of commented-out lines of code should be removed.(ç¤•Áıÿÿÿÿ8·ÂÔ÷¸.
+k	java:S100ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÚ™¦8·ÂÔ÷¸.
+d
+java:S3252è"AUse static access with "com.android.volley.Request" for "Method".(¾Ñ»şÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125Ş"<This block of commented-out lines of code should be removed.(£ÈÜÙ8·ÂÔ÷¸.
+o	java:S116d"SRename this field "store_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï£«8·ÂÔ÷¸.
+^	java:S125û
+"<This block of commented-out lines of code should be removed.(Â‹­åùÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125ß"<This block of commented-out lines of code should be removed.(ğˆëìùÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125©"<This block of commented-out lines of code should be removed.(ïäÊÖøÿÿÿÿ8·ÂÔ÷¸.
+L
+java:S1068|"*Remove this unused "buffer" private field.(ÿÙĞ¹ıÿÿÿÿ8è‰Å÷¸.
+d
+java:S2147¦"FCombine this catch with the one at line 1444, which has the same body.(ï­£Ä8·ÂÔ÷¸.
+l
+java:S1192¡"IDefine a constant instead of duplicating this literal "store_id" 4 times.(¼Š¦“ùÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125Â"<This block of commented-out lines of code should be removed.(¼†ûÿÿÿÿÿ8·ÂÔ÷¸.
+Ÿ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­Éµê8·ÂÔ÷¸.
+W
+java:S1068j":Remove this unused "my_today_order_adapter" private field.(ñŸÉ…8è‰Å÷¸.
+^	java:S125­"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8·ÂÔ÷¸.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã’ê³
+J
+java:S1481Ş",Remove this unused "getName" local variable.(æ÷ŒÒ8·ÂÔ÷¸.
+^	java:S125ë"<This block of commented-out lines of code should be removed.(¸Óı”ûÿÿÿÿ8·ÂÔ÷¸.
+S
+java:S1144ã"0Remove this unused private "getDateTime" method.(¡Ô‹ùÿÿÿÿ8·ÂÔ÷¸.
+}
+java:S1192Œ"ZDefine a constant instead of duplicating this literal "%1$-1s %2$4s %3$10s %4$9s" 3 times.(Æ¸¨ìÿÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125Ò	"<This block of commented-out lines of code should be removed.(Ìü®ê8·ÂÔ÷¸.
+Y	java:S125Ä"<This block of commented-out lines of code should be removed.(¡Õ±š8·ÂÔ÷¸.
+u
+java:S3776ö"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(éÇñòûÿÿÿÿ8·ÂÔ÷¸.
+p
+java:S3008`"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞœëÙÿÿÿÿÿ8·ÂÔ÷¸.
+p
+java:S3776Ä	"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(­œƒÊ8·ÂÔ÷¸.
+Y	java:S125¦"<This block of commented-out lines of code should be removed.(À¦¿½8·ÂÔ÷¸.
+S
+java:S1874a"6Remove this use of "ProgressDialog"; it is deprecated.(Ó¾õ8·ÂÔ÷¸.
+P
+java:S1874›"2Remove this use of "setMessage"; it is deprecated.(‚ç¡×8·ÂÔ÷¸.
+^	java:S125±"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125ğ"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8·ÂÔ÷¸.
+s	java:S117ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÇñòûÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125ä"<This block of commented-out lines of code should be removed.(±ßªöûÿÿÿÿ8·ÂÔ÷¸.
+T
+java:S1874š"6Remove this use of "ProgressDialog"; it is deprecated.(ËÜÄ¥8è‰Å÷¸.
+Y	java:S125¨"<This block of commented-out lines of code should be removed.(ûÈêâ8·ÂÔ÷¸.
+X	java:S125é"<This block of commented-out lines of code should be removed.(ª¯°q8·ÂÔ÷¸.
+K
+java:S1604¬	"(Make this anonymous inner class a lambda(Û¸¡Ğøÿÿÿÿ8êÌÇù¸.
+Y
+java:S1117¤	";Rename "dialog" which hides the field declared at line 113.(§ÃÌ¾8·ÂÔ÷¸.
+p	java:S100ß
+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Àúóÿÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125´"<This block of commented-out lines of code should be removed.(•“Ûá8·ÂÔ÷¸.
+n	java:S117Ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¿åå8·ÂÔ÷¸.
+X	java:S125İ"<This block of commented-out lines of code should be removed.(¢¯¿W8·ÂÔ÷¸.
+F
+java:S1604°"(Make this anonymous inner class a lambda(©¼«ı8·ÂÔ÷¸.
+^	java:S125¯"<This block of commented-out lines of code should be removed.(ûöÊîıÿÿÿÿ8·ÂÔ÷¸.
+K
+java:S1185À"(Remove this method to simply inherit it.(ø´´øÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125Ø"<This block of commented-out lines of code should be removed.(Ñ¥š¡8·ÂÔ÷¸.
+X
+java:S1874q"6Remove this use of "ProgressDialog"; it is deprecated.(ÿ¢ÿÿÿÿÿ8·ÂÔ÷¸.
+p
+java:S3776Ş"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(À¿åå8·ÂÔ÷¸.
+X
+java:S1141Ê"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8·ÂÔ÷¸.
+d
+java:S2142Ì"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8·ÂÔ÷¸.
+P
+java:S1068}"3Remove this unused "selectedAddress" private field.(Œ­ŞŠ8·ÂÔ÷¸.
+?	java:S131¥
+""Add a default case to this switch.(Ö¬ô¶8·ÂÔ÷¸.
+E
+java:S1604»"(Make this anonymous inner class a lambda(Ò·ßx8·ÂÔ÷¸.
+V	java:S106”	"9Replace this use of System.out or System.err by a logger.(ÿÉë£8·ÂÔ÷¸.
+H
+java:S1068Œ"*Remove this unused "mWidth" private field.(ÈŒ„£8è‰Å÷¸.
+|
+java:S2293ˆ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ8·ÂÔ÷¸.
+„	java:S116k"cRename this field "my_nextday_order_adapter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó€İ¡øÿÿÿÿ8·ÂÔ÷¸.
+Y	java:S125œ"<This block of commented-out lines of code should be removed.(‡“É€8·ÂÔ÷¸.
+X	java:S125ı"<This block of commented-out lines of code should be removed.(£•ò8·ÂÔ÷¸.
+Q
+java:S1144Ã".Remove this unused private "printText" method.(ó™ƒáıÿÿÿÿ8·ÂÔ÷¸.
+u
+java:S3776ß
+"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(¥Àúóÿÿÿÿÿ8·ÂÔ÷¸.
+^	java:S125ö	"<This block of commented-out lines of code should be removed.(ª´¾ıÿÿÿÿ8·ÂÔ÷¸.
+s	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·à¸Èøÿÿÿÿ8·ÂÔ÷¸.
+Q
+java:S1874Ğ
+"3Remove this use of "getDrawable"; it is deprecated.(¾õµ°8·ÂÔ÷¸.
+I
+java:S1172É"+Remove this unused method parameter "view".(Ù˜¹»8·ÂÔ÷¸.
+V	java:S106ä"9Replace this use of System.out or System.err by a logger.(ÿÉë£8·ÂÔ÷¸.
+^	java:S125Ò
+"<This block of commented-out lines of code should be removed.(ÃÃ¤şÿÿÿÿ8·ÂÔ÷¸.

@@ -1,0 +1,81 @@
+
+i	java:S116J"URename this field "iv_profile" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÔp
+K
+java:S1604Š"(Make this anonymous inner class a lambda(ÂÅú½ÿÿÿÿÿ8Í¿ò÷¸.
+j
+java:S3252ş"MUse static access with "android.text.Spanned" for "SPAN_INCLUSIVE_INCLUSIVE".(á‰šp8Ğ¨ô÷¸.
+a
+java:S1854•">Remove this useless assignment to local variable "headerView".(›å¢»øÿÿÿÿ8Í¿ò÷¸.
+K
+java:S1604ˆ"(Make this anonymous inner class a lambda(ß•Œ¢şÿÿÿÿ8Ğ¨ô÷¸.
+t
+java:S3776U"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¨Œşÿÿÿÿ8Í¿ò÷¸.
+K
+java:S1604Ë"(Make this anonymous inner class a lambda(©‹Ù™ÿÿÿÿÿ8Ğ¨ô÷¸.
+v
+java:S1104C"YMake currency_sign a static final constant or non-public and provide accessors if needed.(øÄìâ8Í¿ò÷¸.
+D
+java:S1068B"'Remove this unused "TAG" private field.(‘‚™´8Í¿ò÷¸.
+K
+java:S1604 "(Make this anonymous inner class a lambda(–àßñùÿÿÿÿ8Í¿ò÷¸.
+l	java:S116I"RRename this field "tv_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª »²ùÿÿÿÿ
+T
+java:S1874˜"6Remove this use of "setColorFilter"; it is deprecated.(¥­Úå8Í¿ò÷¸.
+]
+java:S1854":Remove this useless assignment to local variable "params".(ô›Óíüÿÿÿÿ8Í¿ò÷¸.
+k
+java:S1192^"IDefine a constant instead of duplicating this literal "language" 3 times.(¯•ĞÉúÿÿÿÿ8Í¿ò÷¸.
+^	java:S125´"<This block of commented-out lines of code should be removed.(ÔÍŠÍøÿÿÿÿ8Í¿ò÷¸.
+[
+java:S1854"8Remove this useless assignment to local variable "args".(´‰Ó²şÿÿÿÿ8Ğ¨ô÷¸.
+\
+java:S1874"9Remove this use of "setDrawerListener"; it is deprecated.(ø¶Âßÿÿÿÿÿ8Í¿ò÷¸.
+q
+java:S1192¨"NDefine a constant instead of duplicating this literal "Home_fragment" 3 times.(ˆÜñÚıÿÿÿÿ8Ğ¨ô÷¸.
+Y	java:S125°"<This block of commented-out lines of code should be removed.(‘ê”İ8Í¿ò÷¸.
+K	java:S108Ò")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8Í¿ò÷¸.
+E
+java:S1604ı"(Make this anonymous inner class a lambda(ÿ£Ù8Í¿ò÷¸.
+J
+java:S1481ï"'Remove this unused "id" local variable.(ªÙğúÿÿÿÿ8Í¿ò÷¸.
+t	java:S116K"SRename this field "nav_menu" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Üˆ­úÿÿÿÿ8Í¿ò÷¸.
+Y
+java:S1854ï"6Remove this useless assignment to local variable "id".(ªÙğúÿÿÿÿ8Í¿ò÷¸.
+T
+java:S2696­"6Make the enclosing method "static" or remove this set.(‡ÿó¡8Í¿ò÷¸.
+K
+java:S1604º"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ8Í¿ò÷¸.
+R
+java:S1481•"/Remove this unused "headerView" local variable.(›å¢»øÿÿÿÿ8Í¿ò÷¸.
+W	java:S110A"<This class has 9 parents which is greater than 5 authorized.(Äz8Í¿ò÷¸.
+P
+java:S1444C"3Make this "public static currency_sign" field final(øÄìâ8Í¿ò÷¸.
+K
+java:S1604Ü"(Make this anonymous inner class a lambda(©‹Ù™ÿÿÿÿÿ8Ğ¨ô÷¸.
+P
+java:S1144š"-Remove this unused private "currency" method.(ò¿ĞŸùÿÿÿÿ8Í¿ò÷¸.
+O
+java:S1481¨",Remove this unused "message" local variable.(ëè Øúÿÿÿÿ8Í¿ò÷¸.
+g
+java:S2583Ã"DChange this condition so that it does not always evaluate to "false"(ÁÀ€ïúÿÿÿÿ8Ğ¨ô÷¸.
+|
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ8Í¿ò÷¸.
+Y	java:S125¾"<This block of commented-out lines of code should be removed.(¬ë×8Í¿ò÷¸.
+L
+java:S1481")Remove this unused "args" local variable.(´‰Ó²şÿÿÿÿ8Ğ¨ô÷¸.
+n	java:S117Ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìù»¥8Ğ¨ô÷¸.
+Z
+java:S1144õ"7Remove this unused private "openLanguageDialog" method.(Öúäçüÿÿÿÿ8Í¿ò÷¸.
+n	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û§Åğ8Í¿ò÷¸.
+Y	java:S125¢"<This block of commented-out lines of code should be removed.(õˆíÿ8Í¿ò÷¸.
+^
+java:S1854¨";Remove this useless assignment to local variable "message".(ëè Øúÿÿÿÿ8Í¿ò÷¸.
+K
+java:S1185Ü"(Remove this method to simply inherit it.(ÜÁ×¥üÿÿÿÿ8Í¿ò÷¸.
+u
+java:S3008C"XRename this field "currency_sign" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÄìâ8Í¿ò÷¸.
+Y	java:S125"<This block of commented-out lines of code should be removed.(®åÓš8Í¿ò÷¸.
+N
+java:S1481"+Remove this unused "params" local variable.(ô›Óíüÿÿÿÿ8Í¿ò÷¸.
+F
+java:S1604­"(Make this anonymous inner class a lambda(ÅÅàÑ8ã•ù÷¸.

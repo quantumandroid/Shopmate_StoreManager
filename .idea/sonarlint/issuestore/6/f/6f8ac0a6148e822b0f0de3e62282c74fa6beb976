@@ -1,0 +1,217 @@
+
+I
+java:S1659F".Declare "customer_address" on a separate line.(Ä™×­ÿÿÿÿÿ
+~	java:S116O"dRename this field "my_order_detail_modelList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óªÇŠÿÿÿÿÿ
+p	java:S116K"VRename this field "back_button" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’°óÓýÿÿÿÿ
+I
+java:S1128C".Remove this unused import 'java.util.TreeMap'.(¨éˆèýÿÿÿÿ
+R
+java:S1128"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ
+R	java:S125¹"<This block of commented-out lines of code should be removed.(Ïµ€Õ
+l	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò£¬•øÿÿÿÿ
+g	java:S117Ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û§Åð
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª­Î‡ýÿÿÿÿ
+>
+java:S1604l"(Make this anonymous inner class a lambda(°§ÎØ
+D
+java:S1604‘"(Make this anonymous inner class a lambda(ÈèšÀÿÿÿÿÿ
+W	java:S125©"<This block of commented-out lines of code should be removed.(›Ï­¬ÿÿÿÿÿ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬½Ñùÿÿÿÿ
+o	java:S116Q"URename this field "con_layout" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óî„¼ÿÿÿÿÿ
+Q	java:S125™"<This block of commented-out lines of code should be removed.(Ê¶‡Z
+F
+java:S1659L"+Declare "confirm_order" on a separate line.(„Æø®þÿÿÿÿ
+R	java:S125ö"<This block of commented-out lines of code should be removed.(Ïµ€Õ
+m
+java:S3776\"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ž¨Œþÿÿÿÿ
+i	java:S100Á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇŠ§Êøÿÿÿÿ
+W	java:S125Š"<This block of commented-out lines of code should be removed.(¯€ÊÞÿÿÿÿÿ
+J
+java:S1172‡".Remove this unused method parameter "sale_id".(Ò£¬•øÿÿÿÿ
+?
+java:S1659N"$Declare "cartid" on a separate line.(­±áƒÿÿÿÿÿ
+q
+java:S1450N"VRemove the "sale_id" field and declare it as a local variable in the relevant methods.(­±áƒÿÿÿÿÿ
+Q	java:S125ž"<This block of commented-out lines of code should be removed.(¨é¿8
+o	java:S116F"URename this field "order_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+W	java:S125ù"<This block of commented-out lines of code should be removed.(Ó³ýÿÿÿÿ
+D
+java:S1604¦"(Make this anonymous inner class a lambda(Ž£Ýýùÿÿÿÿ
+E
+java:S1659F"*Declare "order_socity" on a separate line.(Ä™×­ÿÿÿÿÿ
+R	java:S125Œ"<This block of commented-out lines of code should be removed.(Ë´ï
+p
+java:S1104¶"TMake tv_title a static final constant or non-public and provide accessors if needed.(àª–‹ÿÿÿÿÿ
+?
+java:S1604€"(Make this anonymous inner class a lambda(š¾…
+@
+java:S1659F"%Declare "ammount" on a separate line.(Ä™×­ÿÿÿÿÿ
+W	java:S125Š"<This block of commented-out lines of code should be removed.(¹©óòþÿÿÿÿ
+n
+java:S1104¶"RMake tv_qty a static final constant or non-public and provide accessors if needed.(àª–‹ÿÿÿÿÿ
+D
+java:S1604ó"(Make this anonymous inner class a lambda(·éçÆùÿÿÿÿ
+t
+java:S1450Q"YRemove the "con_layout" field and declare it as a local variable in the relevant methods.(Óî„¼ÿÿÿÿÿ
+I
+java:S1199·"-Extract this nested code block into a method.(·ÿ½äûÿÿÿÿ
+W	java:S125Ã"<This block of commented-out lines of code should be removed.(ó×–žûÿÿÿÿ
+R	java:S125Å"<This block of commented-out lines of code should be removed.(ÈüÚÛ
+D
+java:S1604È"(Make this anonymous inner class a lambda(ßÚÔÊúÿÿÿÿ
+W	java:S125€"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+?
+java:S1604¶"(Make this anonymous inner class a lambda(– ûÙ
+u
+java:S2293æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+A
+java:S1659F"&Declare "order_id" on a separate line.(Ä™×­ÿÿÿÿÿ
+r	java:S116F"XRename this field "customer_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+o	java:S116L"URename this field "reject_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Æø®þÿÿÿÿ
+L
+java:S1874ê"0Remove this use of "getColor"; it is deprecated.(„ãÂ±øÿÿÿÿ
+n
+java:S1104·"RMake delete a static final constant or non-public and provide accessors if needed.(ØØßÕüÿÿÿÿ
+L
+java:S1874ò"0Remove this use of "getColor"; it is deprecated.(„ãÂ±øÿÿÿÿ
+R	java:S125®"<This block of commented-out lines of code should be removed.(ÿŽ°¿
+D
+java:S1604¦"(Make this anonymous inner class a lambda(óÙÈåøÿÿÿÿ
+C
+java:S1068ä",Remove this unused "itemList" private field.(–°á®
+R	java:S125º"<This block of commented-out lines of code should be removed.(Ë‚ì¥
+W	java:S125›"<This block of commented-out lines of code should be removed.(ý‡ç–ÿÿÿÿÿ
+l	java:S116¶"QRename this field "tv_qty" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àª–‹ÿÿÿÿÿ
+g
+java:S1301µ"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ
+l	java:S116H"WRename this field "phone_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œõ§¢
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ÿÉë£
+n	java:S116¶"SRename this field "tv_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àª–‹ÿÿÿÿÿ
+R	java:S125£"<This block of commented-out lines of code should be removed.(Å¸Ñ¾
+B
+java:S1659¶"&Declare "tv_price" on a separate line.(àª–‹ÿÿÿÿÿ
+W	java:S125‚"<This block of commented-out lines of code should be removed.(×§ŠÕüÿÿÿÿ
+Q	java:S125±"<This block of commented-out lines of code should be removed.(ö¾™
+W	java:S125ê"<This block of commented-out lines of code should be removed.(ª´¾ýÿÿÿÿ
+h	java:S101á"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(»úœ±úÿÿÿÿ
+d
+java:S1192—"HDefine a constant instead of duplicating this literal "cart_id" 4 times.(¯Ö„âøÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ãáï
+H
+java:S1874e"2Remove this use of "setMessage"; it is deprecated.(‚ç¡×
+D
+java:S1604‡"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+l	java:S116·"QRename this field "iv_img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØØßÕüÿÿÿÿ
+o	java:S116¸"YRename this field "store_order_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ðù¯·
+R	java:S125û"<This block of commented-out lines of code should be removed.(Ž®ƒ÷
+r	java:S116L"XRename this field "confirm_order" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Æø®þÿÿÿÿ
+D
+java:S1604Ú"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+q	java:S116F"WRename this field "order_socity" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+s	java:S116F"YRename this field "customer_phone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+Q	java:S125o"<This block of commented-out lines of code should be removed.(šˆÌÊ
+R	java:S125«"<This block of commented-out lines of code should be removed.(¾“ì·
+u
+java:S2293õ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+L
+java:S1874â"0Remove this use of "getColor"; it is deprecated.(„ãÂ±øÿÿÿÿ
+n
+java:S1104·"RMake iv_img a static final constant or non-public and provide accessors if needed.(ØØßÕüÿÿÿÿ
+e	java:S116G"PRename this field "Phone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¼° 
+D
+java:S1604É"(Make this anonymous inner class a lambda(ÈèšÀÿÿÿÿÿ
+F
+java:S1659F"+Declare "customer_name" on a separate line.(Ä™×­ÿÿÿÿÿ
+@
+java:S1659·"$Declare "delete" on a separate line.(ØØßÕüÿÿÿÿ
+G
+java:S1659F",Declare "customer_phone" on a separate line.(Ä™×­ÿÿÿÿÿ
+t	java:S116M"ZRename this field "rv_detail_order" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ñü¬ÿÿÿÿÿ
+W	java:S125Ù"<This block of commented-out lines of code should be removed.(–“Åýÿÿÿÿ
+g	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û§Åð
+D
+java:S1604å"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+2
+java:S3626À"Remove this redundant jump.(ûÁÝ…
+R	java:S125"<This block of commented-out lines of code should be removed.(·ª‚ì
+D
+java:S1604ÿ"(Make this anonymous inner class a lambda(ÇéÝµýÿÿÿÿ
+u
+java:S2293‹"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+e
+java:S1192Å"IDefine a constant instead of duplicating this literal "store_id" 4 times.(¼Š¦“ùÿÿÿÿ
+n
+java:S3252É"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¡ì¯ý
+L
+java:S1874d"6Remove this use of "ProgressDialog"; it is deprecated.(†ÀÍ™
+R	java:S125´"<This block of commented-out lines of code should be removed.(íâö·
+f	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ†‡w
+i	java:S100Å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÐÕ›þÿÿÿÿ
+Q	java:S125é"<This block of commented-out lines of code should be removed.(Ê¶‡Z
+u	java:S116F"[Rename this field "customer_address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+n	java:S116¶"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àª–‹ÿÿÿÿÿ
+l	java:S116N"RRename this field "sale_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­±áƒÿÿÿÿÿ
+B
+java:S1659F"'Declare "call_name" on a separate line.(Ä™×­ÿÿÿÿÿ
+m	java:S116N"SRename this field "store_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­±áƒÿÿÿÿÿ
+W	java:S125Ó"<This block of commented-out lines of code should be removed.(¯€ÊÞÿÿÿÿÿ
+Q
+java:S1117ž":Rename "dialog" which hides the field declared at line 80.(§ÃÌ¾
+@
+java:S1659¶"$Declare "tv_qty" on a separate line.(àª–‹ÿÿÿÿÿ
+L
+java:S1874Ú"0Remove this use of "getColor"; it is deprecated.(„ãÂ±øÿÿÿÿ
+Q	java:S125©"<This block of commented-out lines of code should be removed.(Ê¶‡Z
+g	java:S117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û§Åð
+|
+java:S1450S"aRemove the "session_management" field and declare it as a local variable in the relevant methods.(«éØíüÿÿÿÿ
+C
+java:S1659F"(Declare "order_time" on a separate line.(Ä™×­ÿÿÿÿÿ
+N
+java:S1135Ê"2Complete the task associated to this TODO comment.(žáÃæùÿÿÿÿ
+D
+java:S1604•"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+W	java:S125 "<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
+W	java:S125¢"<This block of commented-out lines of code should be removed.(¼˜ïÛÿÿÿÿÿ
+M
+java:S1144ò"1Remove this unused private "confirmorder" method.(ûÛ©Àýÿÿÿÿ
+p
+java:S1104¶"TMake tv_price a static final constant or non-public and provide accessors if needed.(àª–‹ÿÿÿÿÿ
+m	java:S116F"SRename this field "order_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+W	java:S125¼"<This block of commented-out lines of code should be removed.(ÿœ¥ˆüÿÿÿÿ
+Z
+java:S1155¼">Use isEmpty() to check whether the collection is empty or not.(’¼èŠøÿÿÿÿ
+o	java:S116F"URename this field "order_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+n	java:S116F"TRename this field "call_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä™×­ÿÿÿÿÿ
+w	java:S116S"]Rename this field "session_management" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«éØíüÿÿÿÿ
+u
+java:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+W	java:S125û"<This block of commented-out lines of code should be removed.(ñÉÜÐÿÿÿÿÿ
+R	java:S125ø"<This block of commented-out lines of code should be removed.(Çæç
+R	java:S125Ê"<This block of commented-out lines of code should be removed.(Ìü®ê
+O	java:S106à"9Replace this use of System.out or System.err by a logger.(ÿÉë£
+u
+java:S2293Ä"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+Q	java:S125“"<This block of commented-out lines of code should be removed.(üÆÚ
+D
+java:S1604¥"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+=	java:S131µ""Add a default case to this switch.(×ö³–úÿÿÿÿ
+?
+java:S1604ž"(Make this anonymous inner class a lambda(Ú²¢‰
+f
+java:S1192Ã"ODefine a constant instead of duplicating this literal "json store req" 3 times.(û§Åð
+i
+java:S3776³"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(­œƒÊ
+C
+java:S1659F"(Declare "order_date" on a separate line.(Ä™×­ÿÿÿÿÿ
+Q
+java:S1874P"6Remove this use of "ProgressDialog"; it is deprecated.(Žÿ¢ÿÿÿÿÿ
+Q
+java:S1117†":Rename "status" which hides the field declared at line 70.(åÉå­
+Q	java:S125˜"<This block of commented-out lines of code should be removed.(Ãéî^
+W	java:S125¶"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+A
+java:S1659N"&Declare "store_id" on a separate line.(­±áƒÿÿÿÿÿ
+c
+java:S1192•"GDefine a constant instead of duplicating this literal "status" 4 times.(ðÌèýøÿÿÿÿ
+X	java:S110E"<This class has 9 parents which is greater than 5 authorized.(Óõ¾í8¨«ø¸.

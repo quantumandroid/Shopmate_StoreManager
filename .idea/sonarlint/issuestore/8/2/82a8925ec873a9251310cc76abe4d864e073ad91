@@ -1,0 +1,66 @@
+
+V	java:S1102"<This class has 9 parents which is greater than 5 authorized.(¥ƒÎõüÿÿÿÿ
+f	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û§Åğ
+g	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş£˜ï
+g	java:S117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û§Åğ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª­Î‡ıÿÿÿÿ
+>
+java:S1604W"(Make this anonymous inner class a lambda(°§ÎØ
+D
+java:S1604ˆ"(Make this anonymous inner class a lambda(ÈœÏÿÿÿÿÿ
+C
+java:S1604w"(Make this anonymous inner class a lambda(íÁª§øÿÿÿÿ
+D
+java:S1604¯"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+D
+java:S1604À"(Make this anonymous inner class a lambda(Çéİµıÿÿÿÿ
+D
+java:S1604×"(Make this anonymous inner class a lambda(´¸©”üÿÿÿÿ
+?
+java:S1604è"(Make this anonymous inner class a lambda(„¬İ™
+D
+java:S1604î"(Make this anonymous inner class a lambda(ñ øûÿÿÿÿ
+h	java:S1165"SRename this field "store_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï£«
+Q
+java:S1874;"6Remove this use of "ProgressDialog"; it is deprecated.(·á…Çùÿÿÿÿ
+Q
+java:S1874L"6Remove this use of "ProgressDialog"; it is deprecated.(¿Ú•ğúÿÿÿÿ
+H
+java:S1874M"2Remove this use of "setMessage"; it is deprecated.(êøç¢
+t
+java:S2293s"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+u
+java:S2293½"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ
+Y
+java:S1874±"=Remove this use of "getSystemUiVisibility"; it is deprecated.(”µÀûşÿÿÿÿ
+c
+java:S1874²"GRemove this use of "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"; it is deprecated.(ñ¸ßïøÿÿÿÿ
+T
+java:S1874³"=Remove this use of "setSystemUiVisibility"; it is deprecated.(¥ççÉ
+D
+java:S1068:".Remove this unused "searchView" private field.(‰Ôô¦
+L
+java:S1068<"1Remove this unused "searchManager" private field.(¸ıõßûÿÿÿÿ
+Q	java:S125K"<This block of commented-out lines of code should be removed.(²Èæ
+Q	java:S125Z"<This block of commented-out lines of code should be removed.(•ÌÂÜ
+V	java:S125p"<This block of commented-out lines of code should be removed.(şÈçùÿÿÿÿ
+V	java:S125~"<This block of commented-out lines of code should be removed.(­¾èÿÿÿÿÿ
+W	java:S125Œ"<This block of commented-out lines of code should be removed.(Ÿƒ¡Äıÿÿÿÿ
+R	java:S125’"<This block of commented-out lines of code should be removed.(’”Ç÷
+R	java:S125”"<This block of commented-out lines of code should be removed.(ïƒÁÌ
+Q	java:S125–"<This block of commented-out lines of code should be removed.(¨é¿8
+Q	java:S125˜"<This block of commented-out lines of code should be removed.(•Ïü+
+R	java:S125¢"<This block of commented-out lines of code should be removed.(âøœï
+W	java:S125¤"<This block of commented-out lines of code should be removed.(¿ºØŞùÿÿÿÿ
+W	java:S125¦"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+R	java:S125³"<This block of commented-out lines of code should be removed.(ºÉ™é
+R	java:S125Ê"<This block of commented-out lines of code should be removed.(º‰ûŒ
+Q	java:S125Û"<This block of commented-out lines of code should be removed.(Ê¶‡Z
+Q	java:S125ä"<This block of commented-out lines of code should be removed.(ÂÕó 
+R	java:S125û"<This block of commented-out lines of code should be removed.(áİ­µ
+R	java:S125"<This block of commented-out lines of code should be removed.(ã’æş
+R	java:S125Š"<This block of commented-out lines of code should be removed.(Öô°û
+W	java:S125¡"<This block of commented-out lines of code should be removed.(–“Åıÿÿÿÿ
+W	java:S125ª"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+P
+java:S1144¯"9Remove this unused private "whiteNotificationBar" method.(õïØß
