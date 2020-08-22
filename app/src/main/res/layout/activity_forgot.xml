@@ -54,7 +54,7 @@
                 android:src="@drawable/icons"
                 android:textAlignment="center" />
 
-            <com.gogrocersm.storemanager.Fonts.LatoBLack
+            <com.myshopmate.store.Fonts.LatoBLack
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -77,7 +77,7 @@
             android:gravity="center_vertical"
             android:orientation="vertical">
 
-            <com.gogrocersm.storemanager.Fonts.LatoBLack
+            <com.myshopmate.store.Fonts.LatoBLack
                 android:id="@+id/tv_login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
             android:background="@drawable/bg_rounded_button"
             android:padding="12dp">
 
-            <com.gogrocersm.storemanager.Fonts.LatoBLack
+            <com.myshopmate.store.Fonts.LatoBLack
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"

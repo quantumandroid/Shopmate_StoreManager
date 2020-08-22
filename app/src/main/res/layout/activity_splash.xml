@@ -21,7 +21,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.gogrocersm.storemanager.Fonts.LatoBLack
+    <com.myshopmate.store.Fonts.LatoBLack
         android:layout_width="348dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

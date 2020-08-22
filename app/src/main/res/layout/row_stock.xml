@@ -50,7 +50,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -58,7 +58,7 @@
                             android:textColor="@color/dark_gray"
                             android:textSize="@dimen/text_size_X_small" />
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:id="@+id/stock_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -83,7 +83,7 @@
                             android:textColor="@color/dark_gray"
                             android:textSize="@dimen/text_size_X_small" />
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:id="@+id/stock_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -118,7 +118,7 @@
                             android:textColor="@color/dark_gray"
                             android:textSize="@dimen/text_size_X_small" />
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:id="@+id/stock_unit"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -135,14 +135,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/nav_stock"
                             android:textColor="@color/dark_gray"
                             android:textSize="@dimen/text_size_X_small" />
 
-                        <com.gogrocersm.storemanager.Fonts.LatoBLack
+                        <com.myshopmate.store.Fonts.LatoBLack
                             android:id="@+id/stock_price"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

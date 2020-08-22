@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gogrocersm.storemanager">
+    package="com.myshopmate.store">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
     <application
-        android:name=".AppController"
+        android:name="com.myshopmate.store.AppController"
         android:allowBackup="true"
         android:icon="@drawable/icons"
         android:label="@string/app_name"
@@ -24,11 +24,11 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".Dashboard.StockShow" />
-        <activity android:name=".Dashboard.Select_Products" />
-        <activity android:name=".Dashboard.OrderDetails_today" />
+        <activity android:name="com.myshopmate.store.Dashboard.StockShow" />
+        <activity android:name="com.myshopmate.store.Dashboard.Select_Products" />
+        <activity android:name="com.myshopmate.store.Dashboard.OrderDetails_today" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.myshopmate.store.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard.AllProducts">
+        <activity android:name="com.myshopmate.store.Dashboard.AllProducts">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
@@ -45,7 +45,7 @@
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard.AppUserActivity">
+        <activity android:name="com.myshopmate.store.Dashboard.AppUserActivity">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
@@ -55,21 +55,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Dashboard.ForgotActivity"
+            android:name="com.myshopmate.store.Dashboard.ForgotActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Dashboard.LoginActivity"
+            android:name="com.myshopmate.store.Dashboard.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Dashboard.StockList" />
+        <activity android:name="com.myshopmate.store.MainActivity" />
+        <activity android:name="com.myshopmate.store.Dashboard.StockList" />
         <activity
-            android:name=".Dashboard.EditProfile"
+            android:name="com.myshopmate.store.Dashboard.EditProfile"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".Dashboard.StockUpdate"
+            android:name="com.myshopmate.store.Dashboard.StockUpdate"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        <activity android:name=".Dashboard.MyOrderDeatil" />
-        <activity android:name=".Dashboard.OrdersActivity">
+        <activity android:name="com.myshopmate.store.Dashboard.MyOrderDeatil" />
+        <activity android:name="com.myshopmate.store.Dashboard.OrdersActivity">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
@@ -78,9 +78,9 @@
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard.AssignSuccess" />
+        <activity android:name="com.myshopmate.store.Dashboard.AssignSuccess" />
 
-        <service android:name=".Dashboard.MyFirebaseMessagingService">
+        <service android:name="com.myshopmate.store.Dashboard.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

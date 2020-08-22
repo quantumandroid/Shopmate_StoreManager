@@ -57,7 +57,7 @@
                 android:orientation="vertical">
 
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/tv_pro_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                     android:textColor="#000"
                     android:textSize="14sp" />
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/et_pro_name"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -80,7 +80,7 @@
                     android:hint="Manager Name"
                     android:textSize="14sp" />
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/tv_pro_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                     android:textColor="#000"
                     android:textSize="14sp" />
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/et_pro_phone"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -104,7 +104,7 @@
                     android:textSize="14sp" />
 
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/tv_pro_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                     android:textColor="#000"
                     android:textSize="14sp" />
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/et_pro_email"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -128,7 +128,7 @@
                     android:textSize="14sp" />
 
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
                     android:textColor="#000"
                     android:textSize="14sp" />
 
-                <com.gogrocersm.storemanager.Fonts.LatoBLack
+                <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/et_pro_aaddress"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"

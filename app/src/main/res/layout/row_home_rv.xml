@@ -51,7 +51,7 @@
                     android:orientation="vertical"
                     android:paddingLeft="10dp">
 
-                    <com.gogrocersm.storemanager.Fonts.LatoBLack
+                    <com.myshopmate.store.Fonts.LatoBLack
                         android:id="@+id/tv_home_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
