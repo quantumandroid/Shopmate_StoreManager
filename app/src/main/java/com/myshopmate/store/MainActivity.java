@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static String currency_sign;
     ImageView imageView;
     Toolbar toolbar;
+    private TextView tv_name;
+    private ImageView iv_profile;
     int padding = 0;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
-    private TextView tv_name;
-    private ImageView iv_profile;
     private Menu nav_menu;
     private Session_management sessionManagement;
 

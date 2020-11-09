@@ -4,7 +4,7 @@ android {
     compileSdkVersion 30
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        applicationId "com.gogrocerstore.app"
+        applicationId "com.myshopmate.store"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

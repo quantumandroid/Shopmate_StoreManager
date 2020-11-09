@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">StoreManager</string>
+    <string name="app_name" translatable="false">Shopmate_StoreManager</string>
     <string name="currency" translatable="false">\u20B9</string>
     <string name="title_activity_main" translatable="false">MainActivity</string>
     <string name="edit_profilee" translatable="false">Store Profile"</string>

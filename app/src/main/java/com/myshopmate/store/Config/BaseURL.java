@@ -32,12 +32,12 @@ public class BaseURL {
 
 
 //        public static String BASE_URL = "https://thecodecafe.in/gogrocer-ver2.0/api/store/";
-        public static String BASE_URL = "https://thecodecafe.in/newgrocer/api/store/";
+        public static String BASE_URL = "https://www.myshopmate.in/admin//api/store/";
 //    public static String BASE_URL = "https://gogrocer.tecmanic.com/api/store/";
 //    public static String BASE_URL = "https://thecodecafe.in/grocee/api/store/";
 
 
-        public static String BASE_URLGOGrocer = "https://thecodecafe.in/newgrocer/api/";
+        public static String BASE_URLGOGrocer = "https://www.myshopmate.in/admin/";
 //    public static String BASE_URLGOGrocer = "https://gogrocer.tecmanic.com/api/";
 //    public static String BASE_URLGOGrocer = "https://thecodecafe.in/grocee/api/";
 

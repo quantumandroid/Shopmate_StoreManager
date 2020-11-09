@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private static String TAG = LoginActivity.class.getSimpleName();
     SharedPreferences sharedPreferences;
     ProgressDialog progressDialog;
-    String token;
+    String token = "";
     private RelativeLayout btn_continue;
     private EditText et_password, et_email;
     private TextView tv_password, tv_email, btn_forgot;
@@ -225,6 +225,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     if (error instanceof TimeoutError || error instanceof NoConnectionError) {
                         progressDialog.dismiss();
                         Toast.makeText(LoginActivity.this, getResources().getString(R.string.connection_time_out), Toast.LENGTH_SHORT).show();
+                    }else {
+                        progressDialog.dismiss();
+                        Toast.makeText(LoginActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }
             });

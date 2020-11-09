@@ -1,101 +1,34 @@
 {
   "project_info": {
-    "project_number": "160239690969",
-    "firebase_url": "https://shopmate-a8ab9.firebaseio.com",
-    "project_id": "shopmate-a8ab9",
-    "storage_bucket": "shopmate-a8ab9.appspot.com"
+    "project_number": "207001219910",
+    "firebase_url": "https://shopmatestore.firebaseio.com",
+    "project_id": "shopmatestore",
+    "storage_bucket": "shopmatestore.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:160239690969:android:350bdce81f2e64caf74ac8",
-        "android_client_info": {
-          "package_name": "com.myshopmate.delivery"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "160239690969-dhlpe07snt96215ilqa1nl8qsaf89idn.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDy29Ir2T6Sw-911pIa9gNpuyMQabdswtM"
-        },
-        {
-          "current_key": "AIzaSyAa7xsZVGlIujPUH9IKoZWbFtL-DrAh3Eg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "160239690969-dhlpe07snt96215ilqa1nl8qsaf89idn.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:160239690969:android:52327dbcdc945a4df74ac8",
+        "mobilesdk_app_id": "1:207001219910:android:c64b254f2230a562d0ab47",
         "android_client_info": {
           "package_name": "com.myshopmate.store"
         }
       },
       "oauth_client": [
         {
-          "client_id": "160239690969-dhlpe07snt96215ilqa1nl8qsaf89idn.apps.googleusercontent.com",
+          "client_id": "207001219910-7fcjr532rrhtpcjs8s77iukalnqb53m3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDy29Ir2T6Sw-911pIa9gNpuyMQabdswtM"
-        },
-        {
-          "current_key": "AIzaSyAa7xsZVGlIujPUH9IKoZWbFtL-DrAh3Eg"
+          "current_key": "AIzaSyAGjS1duT2UImSDUalfykJpts_A7c8obFQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "160239690969-dhlpe07snt96215ilqa1nl8qsaf89idn.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:160239690969:android:19374a9128dc247bf74ac8",
-        "android_client_info": {
-          "package_name": "com.myshopmate.user"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "160239690969-dhlpe07snt96215ilqa1nl8qsaf89idn.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDy29Ir2T6Sw-911pIa9gNpuyMQabdswtM"
-        },
-        {
-          "current_key": "AIzaSyAa7xsZVGlIujPUH9IKoZWbFtL-DrAh3Eg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "160239690969-dhlpe07snt96215ilqa1nl8qsaf89idn.apps.googleusercontent.com",
+              "client_id": "207001219910-7fcjr532rrhtpcjs8s77iukalnqb53m3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
