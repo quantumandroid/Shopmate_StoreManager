@@ -220,6 +220,12 @@ public class OrderDetails_today extends AppCompatActivity {
                     status.setTextColor(getResources().getColor(R.color.white));
                 }
             }
+
+            if (stats.equalsIgnoreCase("Pending")) {
+                con_layout.setVisibility(View.VISIBLE);
+            } else {
+                con_layout.setVisibility(View.GONE);
+            }
         }
 
 

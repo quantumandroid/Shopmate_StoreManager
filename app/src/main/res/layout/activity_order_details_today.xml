@@ -294,13 +294,13 @@
                     android:textColor="@color/white" />
 
                 <Button
-                    android:visibility="gone"
                     android:id="@+id/reject_order"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
                     android:background="@color/green"
                     android:text="Reject"
+                    android:layout_marginEnd="@dimen/space_10"
+                    android:layout_toStartOf="@id/confirm_order"
                     android:textColor="@color/white" />
 
             </RelativeLayout>

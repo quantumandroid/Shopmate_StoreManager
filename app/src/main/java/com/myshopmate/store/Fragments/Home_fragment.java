@@ -540,9 +540,11 @@ public class Home_fragment extends Fragment {
         dialog.setCancelable(false);
         TabLayout tabLayout = view.findViewById(R.id.tab_layout);
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        tabLayout.addTab(tabLayout.newTab().setText("Today's Order"));
+        //tabLayout.addTab(tabLayout.newTab().setText("Today's Order"));
+        tabLayout.addTab(tabLayout.newTab().setText("Pending Orders"));
 //        tabLayout.addTab(tabLayout.newTab().setText("Assigned Orders"));
-        tabLayout.addTab(tabLayout.newTab().setText("Nextday's Order"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Nextday's Order"));
+        tabLayout.addTab(tabLayout.newTab().setText("Last Orders"));
 //        tabLayout.addTab(tabLayout.newTab().setText("UnAssigned Orders"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         swipe_to = view.findViewById(R.id.swipe_to);
@@ -690,9 +692,9 @@ public class Home_fragment extends Fragment {
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 if (position == 0) {
 //                    tab.setText("Today's Order");
-                    tab.setText("Today's Order");
+                    tab.setText("Pending Orders");
                 } else if (position == 1) {
-                    tab.setText("Nextday's Order");
+                    tab.setText("Last Orders");
                 }
 
             }
@@ -1025,7 +1027,7 @@ public class Home_fragment extends Fragment {
                 Log.i(TAG, response);
                 try {
                     if (response.contains("no orders found")) {
-                        Toast.makeText(context, "No Today's Order found!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "No pending orders found!", Toast.LENGTH_SHORT).show();
                     } else {
                         JSONArray jsonArray = new JSONArray(response);
                         Gson gson = new Gson();
