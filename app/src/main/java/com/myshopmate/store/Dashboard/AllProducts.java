@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -28,6 +29,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.franmontiel.localechanger.LocaleChanger;
 import com.myshopmate.store.Adapter.AllProductsAdapter;
+import com.myshopmate.store.AddEditProductActivity;
 import com.myshopmate.store.AppController;
 import com.myshopmate.store.Config.BaseURL;
 import com.myshopmate.store.Model.NewAllProductModel;
@@ -280,8 +282,19 @@ public class AllProducts extends AppCompatActivity {
         if (id == R.id.action_search) {
             return true;
         }
+        switch (item.getItemId()) {
 
-        return super.onOptionsItemSelected(item);
+            case R.id.action_add:
+                //TODO add menu action here
+                startActivity(new Intent(this, AddEditProductActivity.class));
+                return true;
+
+            default:
+
+                return super.onOptionsItemSelected(item);
+        }
+
+       // return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -308,4 +321,5 @@ public class AllProducts extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.WHITE);
         }
     }
+
 }

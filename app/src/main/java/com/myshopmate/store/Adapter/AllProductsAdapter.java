@@ -1,6 +1,7 @@
 package com.myshopmate.store.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.myshopmate.store.AddEditProductActivity;
 import com.myshopmate.store.Config.BaseURL;
 import com.myshopmate.store.Model.NewAllProductModel;
 import com.myshopmate.store.R;
@@ -71,7 +73,7 @@ public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.
 //        holder.unit_value.setText();
 //        holder.reward.setText(movie.getReward());
         Glide.with(context)
-                .load(BaseURL.IMG_PRODUCT_URL + movie.getVarient_image())
+                .load(BaseURL.BASE_URL + movie.getVarient_image())
                 .centerCrop()
                 .placeholder(R.mipmap.ic_launcher)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -85,6 +87,15 @@ public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.
                 allProductClickListner.onClick(position);
 //                delete(movie.getP_id());
 
+            }
+        });
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, AddEditProductActivity.class);
+                intent.putExtra("product",movie);
+                context.startActivity(intent);
             }
         });
 

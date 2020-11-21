@@ -10,6 +10,12 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
     <style name="AppTabLayout" parent="Widget.Design.TabLayout">
         <item name="android:layout_marginLeft">40dp</item>
         <item name="android:layout_marginRight">40dp</item>
@@ -51,6 +57,23 @@
 
     <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">@dimen/text_size_X_small</item>
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="srcCompat">@android:drawable/ic_menu_upload</item>
+        <item name="backgroundTint">@color/color_green</item>
+        <item name="tint">@color/white</item>
+        <item name="useCompatPadding">true</item>
+    </style>
+
+    <style name="ImageButtonStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/green</item>
     </style>
 
 </resources>
