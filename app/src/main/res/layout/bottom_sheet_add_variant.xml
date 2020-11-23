@@ -1,40 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".AddEditProductActivity">
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimaryDark">
-
-        <ImageView
-            android:id="@+id/iv_back"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:padding="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
-
-        <TextView
-            android:id="@+id/tv_title_add_product"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Add Product"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/iv_back"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -45,45 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:hint="Product Name"
-                tools:ignore="HardcodedText">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_product_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="Category"
-                tools:ignore="HardcodedText" />
-
-            <Spinner
-                android:id="@+id/sp_category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp" />
+            android:padding="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -93,7 +35,7 @@
                     tools:ignore="HardcodedText">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_qty"
+                        android:id="@+id/et_qty_variant"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number" />
@@ -107,7 +49,7 @@
                     tools:ignore="HardcodedText">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_unit"
+                        android:id="@+id/et_unit_variant"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text" />
@@ -130,7 +72,7 @@
                     tools:ignore="HardcodedText">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_mrp"
+                        android:id="@+id/et_mrp_variant"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal" />
@@ -144,7 +86,7 @@
                     tools:ignore="HardcodedText">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_price"
+                        android:id="@+id/et_price_variant"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal" />
@@ -153,7 +95,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_label"
+                android:id="@+id/tv_label_variant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -169,22 +111,21 @@
                 android:layout_marginBottom="10dp">
 
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/imgProfile"
+                    android:id="@+id/imgProfile_variant"
+                    app:srcCompat="@drawable/ic_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_gravity="center"
                     android:padding="3dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/ic_image" />
+                    android:scaleType="centerCrop" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab_add_photo"
+                    android:id="@+id/fab_add_photo_variant"
                     style="@style/FabStyle"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:contentDescription="TODO"
                     android:onClick="pickProfileImage" />
 
             </RelativeLayout>
@@ -197,7 +138,7 @@
                 tools:ignore="HardcodedText">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_description"
+                    android:id="@+id/et_description_variant"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:gravity="start"
@@ -212,29 +153,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <Button
-            android:id="@+id/btn_submit"
+            android:id="@+id/btn_add_variant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:text="SAVE"
+            android:text="ADD"
+            tools:ignore="HardcodedText"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            tools:ignore="HardcodedText" />
-
-        <!--<Button
-            android:id="@+id/btn_add_variants"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/color_3"
-            android:text="ADD VARIANTS"
+            android:background="@color/colorPrimaryDark"/>
+        <Button
+            android:id="@+id/btn_done_variants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:layout_weight="1"
+            android:background="@color/color_green"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            tools:ignore="HardcodedText" />-->
-
+            tools:ignore="HardcodedText" />
     </LinearLayout>
-
 
 </LinearLayout>

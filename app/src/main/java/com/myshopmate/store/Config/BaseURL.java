@@ -55,6 +55,7 @@ public class BaseURL {
     public static String storeproducts = BASE_URL + "storeproducts";
     public static String getBoyList = BASE_URL + "nearbydboys";
     public static String assignBoyToOrder = BASE_URL + "storeconfirm";
+    public static String getCategories = BASE_URL + "categories";
 
 
     public static String currency = BASE_URLGOGrocer + "currency";

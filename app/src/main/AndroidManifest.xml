@@ -20,15 +20,17 @@
         android:allowBackup="true"
         android:icon="@drawable/icons"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/icons"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
         tools:targetApi="m">
-        <activity android:name=".AddEditProductActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="Product Details"/>
+        <activity android:name=".VariantsActivity"></activity>
+        <activity
+            android:name=".AddEditProductActivity"
+            android:label="Product Details"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".Dashboard.StockShow" />
         <activity android:name=".Dashboard.Select_Products" />
         <activity android:name=".Dashboard.OrderDetails_today" />
