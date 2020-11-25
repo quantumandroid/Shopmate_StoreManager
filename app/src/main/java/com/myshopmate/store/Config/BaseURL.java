@@ -51,6 +51,7 @@ public class BaseURL {
     public static String storeconfirm = BASE_URL + "storeconfirm";
     public static String productselect = BASE_URL + "productselect";
     public static String store_stock_update = BASE_URL + "store_stock_update";
+    public static String store_stock_update_check = BASE_URL + "store_stock_update_check";
     public static String store_delete_product = BASE_URL + "store_delete_product";
     public static String storeproducts = BASE_URL + "storeproducts";
     public static String getBoyList = BASE_URL + "nearbydboys";

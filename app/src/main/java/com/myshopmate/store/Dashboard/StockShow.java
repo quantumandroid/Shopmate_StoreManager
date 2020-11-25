@@ -110,6 +110,7 @@ public class StockShow extends AppCompatActivity {
                             movie.setP_id(jsonObject.getString("p_id"));
                             movie.setStock(jsonObject.getString("stock"));
                             movie.setVarient_image(jsonObject.getString("varient_image"));
+                            movie.setIn_stock(jsonObject.getString("in_stock"));
                             movieList.add(movie);
 
                         }

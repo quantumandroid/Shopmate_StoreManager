@@ -12,6 +12,7 @@ public class AlllProductModel {
     String unit;
     String price;
     String description, varient_image, cat_id, product_name, product_image;
+    String in_stock;
 
 
     public String getP_id() {
@@ -124,6 +125,14 @@ public class AlllProductModel {
 
     public void setProduct_image(String product_image) {
         this.product_image = product_image;
+    }
+
+    public String getIn_stock() {
+        return in_stock;
+    }
+
+    public void setIn_stock(String in_stock) {
+        this.in_stock = in_stock;
     }
 }
 

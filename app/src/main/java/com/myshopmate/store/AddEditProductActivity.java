@@ -50,7 +50,7 @@ public class AddEditProductActivity extends AppCompatActivity {
 
     AppCompatImageView imgProfile;
     TextInputEditText etProductName, etQty, etPrice, etMRP, etUnit, etDescription;
-    TextInputEditText etQtyVariant, etPriceVariant, etMRPVariant, etUnitVariant, etDescriptionVariant;
+    TextInputEditText etQtyVariant, etPriceVariant, etMRPVariant, etUnitVariant, etDescriptionVariant, et_product_category;
     Spinner spCategory;
     FloatingActionButton selectImage;
     Button btnSubmit;//,btnAddVariants;
@@ -62,6 +62,7 @@ public class AddEditProductActivity extends AppCompatActivity {
     ArrayList<Category> categories;
     private  CategoriesAdapter categoriesAdapter;
     private String selectedCatID = "";
+    private String selectedCatName = "";
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -90,6 +91,7 @@ public class AddEditProductActivity extends AppCompatActivity {
         etDescription = findViewById(R.id.et_description);
         selectImage = findViewById(R.id.fab_add_photo);
         spCategory = findViewById(R.id.sp_category);
+        et_product_category = findViewById(R.id.et_product_category);
         spCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -133,7 +135,10 @@ public class AddEditProductActivity extends AppCompatActivity {
             product = (NewAllProductModel) bundle.get("product");
             isAdd = false;
             setData();
-            tvTitle.setText("Edit Product");
+            disableViews();
+            tvTitle.setText("View Product");
+
+
         }
         getCategories();
     }
@@ -214,7 +219,14 @@ public class AddEditProductActivity extends AppCompatActivity {
                             Category category = gson.fromJson(String.valueOf(jsonObject),Category.class);
                             categories.add(category);
                             categoryNames.add(category.getTitle());
+
+                            if (category.getCat_id().equals(product.getCat_id())){
+                                selectedCatName = category.getTitle();
+                            }
+
+
                         }
+                        setData();
                         setCategoryAdapter(categoryNames);
                     }
 
@@ -243,6 +255,7 @@ public class AddEditProductActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter.addAll(categoryNames);
         spCategory.setAdapter(adapter);
+
       //  spCategory.setAdapter(categoriesAdapter);
     }
 
@@ -268,12 +281,14 @@ public class AddEditProductActivity extends AppCompatActivity {
     }
 
     private void setData() {
+
         etProductName.setText(product.getProduct_name());
         etQty.setText(product.getQuantity());
         etUnit.setText(product.getUnit());
         etMRP.setText(product.getMrp());
         etDescription.setText(product.getDescription());
         etPrice.setText(product.getPrice());
+        et_product_category.setText(selectedCatName);
         Glide.with(context)
                 .load(BaseURL.BASE_URL + product.getVarient_image())
                 .centerCrop()
@@ -291,6 +306,7 @@ public class AddEditProductActivity extends AppCompatActivity {
         etDescription.setEnabled(true);
         etPrice.setEnabled(true);
         spCategory.setEnabled(true);
+        et_product_category.setEnabled(true);
         selectImage.setVisibility(View.VISIBLE);
         btnSubmit.setVisibility(View.VISIBLE);
     }
@@ -303,6 +319,7 @@ public class AddEditProductActivity extends AppCompatActivity {
         etMRP.setEnabled(false);
         etDescription.setEnabled(false);
         etPrice.setEnabled(false);
+        et_product_category.setEnabled(false);
         selectImage.setVisibility(View.GONE);
         btnSubmit.setVisibility(View.GONE);
     }

@@ -17,5 +17,6 @@
         android:icon="@drawable/ic_add"
         android:title="Add Product"
         app:showAsAction="ifRoom"
+        android:visible="false"
         tools:ignore="HardcodedText" />
 </menu>
