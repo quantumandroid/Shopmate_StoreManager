@@ -290,7 +290,7 @@ public class AddEditProductActivity extends AppCompatActivity {
         etPrice.setText(product.getPrice());
         et_product_category.setText(selectedCatName);
         Glide.with(context)
-                .load(BaseURL.BASE_URL + product.getVarient_image())
+                .load(BaseURL.IMG_PRODUCT_URL + product.getVarient_image())
                 .centerCrop()
                 .placeholder(R.mipmap.ic_launcher)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)

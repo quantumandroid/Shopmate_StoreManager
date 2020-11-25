@@ -73,7 +73,7 @@ public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.
 //        holder.unit_value.setText();
 //        holder.reward.setText(movie.getReward());
         Glide.with(context)
-                .load(BaseURL.BASE_URL + movie.getVarient_image())
+                .load(BaseURL.IMG_PRODUCT_URL + movie.getVarient_image())
                 .centerCrop()
                 .placeholder(R.mipmap.ic_launcher)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)

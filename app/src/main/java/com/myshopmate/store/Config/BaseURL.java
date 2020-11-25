@@ -32,7 +32,7 @@ public class BaseURL {
 
 
 //        public static String BASE_URL = "https://thecodecafe.in/gogrocer-ver2.0/api/store/";
-        public static String BASE_URL = "https://www.myshopmate.in/admin//api/store/";
+        public static String BASE_URL = "https://www.myshopmate.in/admin/api/store/";
 //    public static String BASE_URL = "https://gogrocer.tecmanic.com/api/store/";
 //    public static String BASE_URL = "https://thecodecafe.in/grocee/api/store/";
 
@@ -68,7 +68,7 @@ public class BaseURL {
     public static String Update_user = BASE_URL + "store_profile";
     public static String ASSIGN_ORDER = BASE_URLGOGrocer + "index.php/api/assign_order";
     public static String OrderDetail = BASE_URLGOGrocer + "index.php/api/order_details";
-        public static String IMG_PRODUCT_URL = "https://thecodecafe.in/newgrocer/";
+        public static String IMG_PRODUCT_URL = "https://www.myshopmate.in/admin/";
 //    public static String IMG_PRODUCT_URL = "https://gogrocer.tecmanic.com/";
 //    public static String IMG_PRODUCT_URL = "https://thecodecafe.in/grocee/";
 
