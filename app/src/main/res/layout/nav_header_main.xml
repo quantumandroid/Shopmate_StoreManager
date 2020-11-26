@@ -35,12 +35,12 @@
                 android:layout_weight="1.1"
                 android:gravity="center|left">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_header_img"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="@dimen/space_8"
-                    android:src="@drawable/icons" />
+                    android:src="@mipmap/ic_launcher" />
             </LinearLayout>
 
 

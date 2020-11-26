@@ -18,6 +18,7 @@ public class NewAllProductModel implements Serializable {
     private String cat_id;
     private String product_name;
     private String product_image;
+    private String in_stock;
 
     public String getP_id() {
         return p_id;
@@ -129,5 +130,13 @@ public class NewAllProductModel implements Serializable {
 
     public void setProduct_image(String product_image) {
         this.product_image = product_image;
+    }
+
+    public String getIn_stock() {
+        return in_stock;
+    }
+
+    public void setIn_stock(String in_stock) {
+        this.in_stock = in_stock;
     }
 }

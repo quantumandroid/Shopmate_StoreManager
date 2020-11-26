@@ -22,7 +22,7 @@ import com.myshopmate.store.util.Session_management;
 import java.util.List;
 import java.util.Locale;
 
-public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.ViewHolder>{
+public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.ViewHolder> {
 
     private Context context;
     private List<NewAllProductModel> searchList;
@@ -94,11 +94,18 @@ public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, AddEditProductActivity.class);
-                intent.putExtra("product",movie);
+                intent.putExtra("product", movie);
                 context.startActivity(intent);
             }
         });
 
+        if (movie.getIn_stock().equals("1")) {
+            holder.tvInStock.setText("In Stock");
+            holder.tvInStock.setTextColor(context.getResources().getColor(R.color.color_green));
+        } else {
+            holder.tvInStock.setText("Out of Stock");
+            holder.tvInStock.setTextColor(context.getResources().getColor(R.color.color_3));
+        }
     }
 
     @Override
@@ -165,6 +172,7 @@ public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView product_name, price, unit_value, qty, mrp, product_desp;
         public ImageView productimage, delete;
+        public TextView tvInStock;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -177,8 +185,7 @@ public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.
             productimage = itemView.findViewById(R.id.imageview_product);
             mrp = itemView.findViewById(R.id.mrp_product);
             delete = itemView.findViewById(R.id.delete);
-
-
+            tvInStock = itemView.findViewById(R.id.tv_in_stock);
         }
     }
 }

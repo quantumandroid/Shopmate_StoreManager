@@ -62,13 +62,15 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private static final String TAG = MainActivity.class.getSimpleName();
     public static String currency_sign;
     ImageView imageView;
     Toolbar toolbar;
     private TextView tv_name;
-    private ImageView iv_profile;
+    private CircleImageView iv_profile;
     int padding = 0;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
@@ -154,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         nav_menu = navigationView.getMenu();
 
         View header = ((NavigationView) findViewById(R.id.nav_view)).getHeaderView(0);
-        iv_profile = (ImageView) header.findViewById(R.id.iv_header_img);
+        iv_profile =  header.findViewById(R.id.iv_header_img);
         tv_name = (TextView) header.findViewById(R.id.tv_header_name);
         new Thread(this::getCurrency).start();
         updateHeader();

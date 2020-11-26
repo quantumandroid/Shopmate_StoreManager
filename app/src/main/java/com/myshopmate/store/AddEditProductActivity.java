@@ -64,6 +64,8 @@ public class AddEditProductActivity extends AppCompatActivity {
     private String selectedCatID = "";
     private String selectedCatName = "";
 
+    private TextView tv_in_stock;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +94,7 @@ public class AddEditProductActivity extends AppCompatActivity {
         selectImage = findViewById(R.id.fab_add_photo);
         spCategory = findViewById(R.id.sp_category);
         et_product_category = findViewById(R.id.et_product_category);
+        tv_in_stock = findViewById(R.id.tv_in_stock);
         spCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -281,7 +284,13 @@ public class AddEditProductActivity extends AppCompatActivity {
     }
 
     private void setData() {
-
+        if (product.getIn_stock().equals("1")) {
+            tv_in_stock.setText("In Stock");
+            tv_in_stock.setTextColor(context.getResources().getColor(R.color.color_green));
+        } else {
+            tv_in_stock.setText("Out of Stock");
+            tv_in_stock.setTextColor(context.getResources().getColor(R.color.color_3));
+        }
         etProductName.setText(product.getProduct_name());
         etQty.setText(product.getQuantity());
         etUnit.setText(product.getUnit());

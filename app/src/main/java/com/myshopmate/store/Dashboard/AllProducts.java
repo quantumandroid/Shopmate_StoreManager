@@ -98,7 +98,8 @@ public class AllProducts extends AppCompatActivity {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         mList.setLayoutManager(mLayoutManager);
         mList.setItemAnimator(new DefaultItemAnimator());
-        mList.addItemDecoration(new MyDividerItemDecoration(this, DividerItemDecoration.VERTICAL, 36));
+//        mList.addItemDecoration(new MyDividerItemDecoration(this, DividerItemDecoration.VERTICAL,0));
+//        mList.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
         mList.setAdapter(adapter);
 
         if (ConnectivityReceiver.isConnected()) {
