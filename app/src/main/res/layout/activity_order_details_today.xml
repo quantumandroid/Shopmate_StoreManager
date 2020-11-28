@@ -261,6 +261,34 @@
                         android:textColor="#000"
                         android:textSize="@dimen/text_size_X_small" />
                 </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_p_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Payable Amount"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/p_ammount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_X_small" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"

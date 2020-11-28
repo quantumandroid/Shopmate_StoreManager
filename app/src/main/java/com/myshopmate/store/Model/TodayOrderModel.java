@@ -20,6 +20,8 @@ public class TodayOrderModel implements Serializable {
     private String customer_phone;
     private ArrayList<My_order_detail_model> order_details;
 
+    private String p_amount;
+
     public String getUser_address() {
         return user_address;
     }
@@ -130,6 +132,14 @@ public class TodayOrderModel implements Serializable {
 
     public void setOrder_details(ArrayList<My_order_detail_model> order_details) {
         this.order_details = order_details;
+    }
+
+    public String getP_amount() {
+        return p_amount;
+    }
+
+    public void setP_amount(String p_amount) {
+        this.p_amount = p_amount;
     }
 
     //    public String cart_id;

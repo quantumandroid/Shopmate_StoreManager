@@ -90,8 +90,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="G:\Shopmate_StoreManager\assets\splashicon.png" />
-                                                <entry key="scalingPercent" value="66" />
+                                                <entry key="imagePath" value="G:\Shopmate_StoreManager\assets\icons_transparent.png" />
+                                                <entry key="scalingPercent" value="58" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -124,7 +124,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="backgroundColor" value="0fc1bb" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -1,6 +1,7 @@
 package com.myshopmate.store.Dashboard;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -19,6 +20,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -64,7 +66,8 @@ import java.util.Map;
 
 public class OrderDetails_today extends AppCompatActivity {
 
-    TextView status, order_id, customer_name, order_socity, customer_phone, customer_address, order_date, order_time, ammount,call_name;
+    TextView status, order_id, customer_name, order_socity, customer_phone, customer_address, order_date, order_time ,call_name;
+    TextView p_ammount, ammount;
     ImageView Phone;
     String phone_number = "";
     ImageView back_button;
@@ -81,6 +84,7 @@ public class OrderDetails_today extends AppCompatActivity {
     //    private SharedPreferences.Editor editor;
     private Session_management session_management;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,7 +125,7 @@ public class OrderDetails_today extends AppCompatActivity {
         order_date = findViewById(R.id.order_date);
 //        order_time = findViewById(R.id.order_time);
         ammount = findViewById(R.id.ammount);
-
+        p_ammount = findViewById(R.id.p_ammount);
         sale_id = getIntent().getStringExtra("sale_id");
 //        store_order_id = getIntent().getStringExtra("store_order_id");
 
@@ -137,6 +141,7 @@ public class OrderDetails_today extends AppCompatActivity {
         String date = getIntent().getStringExtra("date");
         String time = getIntent().getStringExtra("time");
         String amount = getIntent().getStringExtra("ammount");
+        String pAmount = getIntent().getStringExtra("p_amount");
         String stats = getIntent().getStringExtra("status");
         cartid = getIntent().getStringExtra("cart_id");
         my_order_detail_modelList.clear();
@@ -167,7 +172,17 @@ public class OrderDetails_today extends AppCompatActivity {
         order_date.setText(dateList.get(2)+"-"+dateList.get(1)+"-"+dateList.get(0) + " & " + time);
 //        order_date.setText(date + " & " + time);
 //        order_time.setText(time);
-        ammount.setText(session_management.getCurrency() + amount);
+        if (amount == null) {
+            ammount.setText("₹0");
+        } else {
+            ammount.setText("₹"+amount);
+        }
+//        ammount.setText(session_management.getCurrency() + amount);
+        if (pAmount == null) {
+            p_ammount.setText("₹0");
+        } else {
+            p_ammount.setText("₹"+pAmount);
+        }
 //        status.setText(stats);
 
         reject_btn.setOnClickListener(new View.OnClickListener() {

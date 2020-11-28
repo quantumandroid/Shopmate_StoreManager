@@ -592,6 +592,7 @@ public class Home_fragment extends Fragment {
                     String date = movieList.get(position).getDelivery_date();
                     String time = movieList.get(position).getTime_slot();
                     String ammount = movieList.get(position).getOrder_price();
+                    String pAmount = movieList.get(position).getP_amount();
                     String status = movieList.get(position).getOrder_status();
                     String cart_id = movieList.get(position).getCart_id();
                     Intent intent = new Intent(context, OrderDetails_today.class);
@@ -602,6 +603,7 @@ public class Home_fragment extends Fragment {
                     intent.putExtra("time", time);
                     intent.putExtra("cart_id", cart_id);
                     intent.putExtra("ammount", ammount);
+                    intent.putExtra("p_amount", pAmount);
                     intent.putExtra("address", movieList.get(position).getUser_address());
                     intent.putExtra("status", status);
                     intent.putExtra("data", movieList.get(position).getOrder_details());
