@@ -1,9 +1,11 @@
 package com.myshopmate.store.Dashboard;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -13,6 +15,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -164,7 +167,8 @@ public class MyOrderDeatil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                confirmorder();
-                getBoysList();
+//                getBoysList();
+                orderConfirmDialog();
             }
         });
 
@@ -492,13 +496,34 @@ public class MyOrderDeatil extends AppCompatActivity {
         AppController.getInstance().addToRequestQueue(request);
     }
 
-    private void confirmorder() {
+    private void orderConfirmDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Confirm Order");
+        builder.setMessage("Are you sure?");
+        builder.setNegativeButton("Not Now", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
 
+            }
+        });
+        builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                confirmorder();
+            }
+        });
+        builder.create().show();
+    }
+
+    private void confirmorder() {
+        if (dialog!=null && !dialog.isShowing()){
+            dialog.show();
+        }
         String tag_json_obj = "json store req";
         Map<String, String> params = new HashMap<String, String>();
         params.put("store_id", store_id);
         params.put("cart_id", cartid);
-        params.put("dboy_id", cartid);
+//        params.put("dboy_id", cartid);
 //        Log.d("xx", store_id);
 
 //        Log.d("xx", cartid);
@@ -509,16 +534,28 @@ public class MyOrderDeatil extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 Log.d("Tag", response.toString());
-
+                if (dialog != null && dialog.isShowing()) {
+                    dialog.dismiss();
+                }
                 try {
 
                     String status = response.getString("status");
-                    String message = response.getString("message");
+//                    String message = response.getString("message");
                     if (status.contains("1")) {
 
 //                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        Toast.makeText(MyOrderDeatil.this, "" + message, Toast.LENGTH_SHORT).show();
+                        Toast toast = Toast.makeText(MyOrderDeatil.this, "Order confirmed successfully", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.CENTER,0,0);
+                        toast.show();
+                        Intent intent = new Intent();
+                        intent.putExtra("runapi","true");
+                        setResult(7,intent);
 
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                            finishAndRemoveTask();
+                        }else {
+                            finish();
+                        }
 
                     }
 
@@ -530,7 +567,9 @@ public class MyOrderDeatil extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                if (dialog != null && dialog.isShowing()) {
+                    dialog.dismiss();
+                }
                 //    Toast.makeText(context.getApplicationContext(), ""+error, Toast.LENGTH_SHORT).show();
             }
         });

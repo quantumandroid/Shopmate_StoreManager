@@ -80,28 +80,32 @@ public class Orders_Adapter extends RecyclerView.Adapter<Orders_Adapter.MyViewHo
         };
     }
 
-    @SuppressLint("ResourceAsColor")
+    @SuppressLint({"ResourceAsColor", "SetTextI18n"})
     @Override
     public void onBindViewHolder(Orders_Adapter.MyViewHolder holder, int position) {
         final OrdersModel mList = appuserlistfilter.get(position);
         holder.tv_ammount.setText(session_management.getCurrency() + mList.getTotal_amount());
         holder.payment_mode.setText(mList.getPayment_method());
 
-        if (mList.getStatus().equals("0")) {
-            holder.tv_status.setText(context.getResources().getString(R.string.pending));
-        } else if (mList.getStatus().equals("1")) {
-            holder.tv_status.setText(context.getResources().getString(R.string.confirm));
-        } else if (mList.getStatus().equals("2")) {
-            holder.tv_status.setText(context.getResources().getString(R.string.outfordeliverd));
-        } else if (mList.getStatus().equals("4")) {
-            holder.tv_status.setText(context.getResources().getString(R.string.delivered));
+        switch (mList.getStatus()) {
+            case "0":
+                holder.tv_status.setText(context.getResources().getString(R.string.pending));
+                break;
+            case "1":
+                holder.tv_status.setText(context.getResources().getString(R.string.confirm));
+                break;
+            case "2":
+                holder.tv_status.setText(context.getResources().getString(R.string.outfordeliverd));
+                break;
+            case "4":
+                holder.tv_status.setText(context.getResources().getString(R.string.delivered));
+                break;
         }
 
         if (mList.getAssign_to().equals("0")) {
             holder.tv_assign_to.setText("");
-        } else if (mList.getAssign_to() != "0") {
+        } else if (!mList.getAssign_to().equals("0")) {
             holder.tv_assign_to.setText("Assign To " + mList.getAssign_to());
-
         }
         holder.tv_order_id.setText(mList.getSale_id());
         holder.tv_customer_name.setText(mList.getUser_fullname());
