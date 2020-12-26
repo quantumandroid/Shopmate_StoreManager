@@ -72,6 +72,7 @@ public class BaseURL {
 //    public static String IMG_PRODUCT_URL = "https://gogrocer.tecmanic.com/";
 //    public static String IMG_PRODUCT_URL = "https://thecodecafe.in/grocee/";
 
+    public static String IMG_URL = "https://www.myshopmate.in/admin/";
 
     //Dashboard Items
 //    public static String ALL_PRODUCTS_URL = BASE_URL + "index.php/api/all_products";

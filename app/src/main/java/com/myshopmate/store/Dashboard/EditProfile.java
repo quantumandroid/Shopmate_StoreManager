@@ -1,5 +1,6 @@
 package com.myshopmate.store.Dashboard;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -29,12 +30,15 @@ import com.myshopmate.store.Config.BaseURL;
 import com.myshopmate.store.R;
 import com.myshopmate.store.util.CustomVolleyJsonRequest;
 import com.myshopmate.store.util.Session_management;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static com.myshopmate.store.Config.BaseURL.IMG_URL;
 
 public class EditProfile extends AppCompatActivity {
     private static final int GALLERY_REQUEST_CODE1 = 201;
@@ -102,7 +106,7 @@ public class EditProfile extends AppCompatActivity {
         admin = (TextView) findViewById(R.id.admin);
         earn = (TextView) findViewById(R.id.earn);
 
-//        iv_profile = (ImageView) findViewById(R.id.iv_pro_img);
+        iv_profile = (ImageView) findViewById(R.id.iv_pro_img);
 //        btn_update = (RelativeLayout) findViewById(R.id.btn_pro_edit);
         SharedPreferences prefs = getSharedPreferences("logindata", MODE_PRIVATE);
         userid = prefs.getString("id", "");
@@ -149,11 +153,12 @@ public class EditProfile extends AppCompatActivity {
         progressDialog.show();
         String tag_json_obj = "json_login_req";
         final Map<String, String> params = new HashMap<String, String>();
-        params.put("store_id",userid);
+        params.put("store_id", userid);
 
         CustomVolleyJsonRequest jsonObjReq = new CustomVolleyJsonRequest(Request.Method.POST,
                 BaseURL.Update_user, params, new Response.Listener<JSONObject>() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onResponse(JSONObject response) {
                 Log.d(TAG, response.toString());
@@ -169,19 +174,30 @@ public class EditProfile extends AppCompatActivity {
                         address = obj.getString("address");
                         paid = obj.getString("paid");
                         store_earning = obj.getString("store_earning");
+                        image = obj.getString("store_image_url");
 
 
                         et_name.setText(store_name);
                         et_phone.setText(user_phone);
                         et_email.setText(user_email);
                         et_house.setText(address);
-                        if (paid!=null && !paid.equalsIgnoreCase("") && !paid.equalsIgnoreCase("null")){
-                            admin.setText(paid);
-                        }else {
+                        if (paid != null && !paid.equalsIgnoreCase("") && !paid.equalsIgnoreCase("null")) {
+                            admin.setText("₹"+paid);
+                        } else {
                             admin.setText("Not Confirmed");
                         }
 
-                        earn.setText(sessionManagement.getCurrency()+" "+store_earning);
+                        if (store_earning == null || store_earning.isEmpty()) {
+                            earn.setText("Not Confirmed");
+                        } else {
+                            earn.setText("₹" + Math.round(Double.parseDouble(store_earning)));
+                        }
+
+                        if (image != null && !image.isEmpty()) {
+                            Picasso.get()
+                                    .load(IMG_URL + image)
+                                    .into(iv_profile);
+                        }
 
 //                        Toast.makeText(EditProfile.this, ""+message, Toast.LENGTH_SHORT).show();
 
@@ -200,7 +216,7 @@ public class EditProfile extends AppCompatActivity {
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
-                }finally {
+                } finally {
                     progressDialog.dismiss();
                 }
             }

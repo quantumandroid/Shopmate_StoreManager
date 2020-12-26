@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -44,8 +45,8 @@
 
                 <ImageView
                     android:id="@+id/iv_pro_img"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/space_10"
                     android:layout_marginBottom="@dimen/space_10"
@@ -54,7 +55,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_10">
 
 
                 <com.myshopmate.store.Fonts.LatoBLack
@@ -141,7 +143,7 @@
                 <com.myshopmate.store.Fonts.LatoBLack
                     android:id="@+id/et_pro_aaddress"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/space_12"
                     android:layout_marginTop="@dimen/space_5"
                     android:layout_marginRight="@dimen/space_12"
@@ -150,7 +152,8 @@
                     android:gravity="center_horizontal"
                     android:hint="Enter your address."
                     android:textColor="#000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="20dp"
