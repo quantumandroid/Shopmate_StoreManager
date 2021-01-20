@@ -11,17 +11,25 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.myshopmate.store.MainActivity;
-import com.myshopmate.store.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import com.myshopmate.store.MainActivity;
+import com.myshopmate.store.R;
 
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private static final String TAG = "MyFirebaseMsgService";
     Bitmap bitmap;
+    private LocalBroadcastManager localBroadcastManager;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        localBroadcastManager = LocalBroadcastManager.getInstance(this);
+    }
 
     @Override
     public void onNewToken(@NonNull String s) {
@@ -34,11 +42,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      * @param remoteMessage Object representing the message received from Firebase Cloud Messaging.
      */
     // [START receive_message]
-
-
-
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
+        Intent broadcastIntent = new Intent("New_Order");
+        localBroadcastManager.sendBroadcast(broadcastIntent);
         // [START_EXCLUDE]
         // There are two types of messages data messages and notification messages. Data messages are handled
         // here in onMessageReceived whether the app is in the foreground or background. Data messages are the type
@@ -59,11 +66,18 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, channelId)
                 .setSmallIcon(R.drawable.icons)
                 .setContentTitle(remoteMessage.getNotification().getTitle())
-                .setContentText(remoteMessage.getNotification().getBody()).setAutoCancel(true).setContentIntent(pendingIntent);
-        ;
+                .setContentText(remoteMessage.getNotification().getBody())
+                .setAutoCancel(true)
+                .setContentIntent(pendingIntent)
+                .setVibrate(new long[]{0, 500, 1000});
+//                .setDefaults(Notification.DEFAULT_LIGHTS);
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(channelId, "Default channel", NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setImportance(NotificationManager.IMPORTANCE_HIGH);
+            channel.setAllowBubbles(true);
+            channel.enableLights(true);
+            channel.enableVibration(true);
             manager.createNotificationChannel(channel);
         }
         manager.notify(0, builder.build());

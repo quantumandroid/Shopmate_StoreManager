@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -44,7 +43,6 @@ import com.myshopmate.store.Dashboard.AllProducts;
 import com.myshopmate.store.Dashboard.AppUserActivity;
 import com.myshopmate.store.Dashboard.EarningsActivity;
 import com.myshopmate.store.Dashboard.EditProfile;
-import com.myshopmate.store.Dashboard.LoginActivity;
 import com.myshopmate.store.Dashboard.OrdersActivity;
 import com.myshopmate.store.Dashboard.Select_Products;
 import com.myshopmate.store.Dashboard.StockList;
@@ -271,7 +269,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             });*/
             nav_menu.findItem(R.id.nav_logout).setVisible(false);
-
         }
     }
 
@@ -398,8 +395,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
                 editor.putString("language", "spanish");
                 editor.apply();
-
-
                 recreate();
                 dialog.dismiss();
             }
