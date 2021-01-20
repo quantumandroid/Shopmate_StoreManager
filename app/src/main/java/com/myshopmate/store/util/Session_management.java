@@ -1,8 +1,10 @@
 package com.myshopmate.store.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 
 import com.myshopmate.store.Dashboard.LoginActivity;
 
@@ -144,11 +146,17 @@ public class Session_management {
         cleardatetime();
 
         Intent logout = new Intent(context, LoginActivity.class);
-        logout.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//        logout.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
 
         // Add new Flag to start new Activity
-        logout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        logout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ((Activity)context).finishAndRemoveTask();
+        } else {
+            ((Activity)context).finish();
+        }
         context.startActivity(logout);
     }
 

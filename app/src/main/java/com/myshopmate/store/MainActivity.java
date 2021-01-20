@@ -262,14 +262,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (sessionManagement.isLoggedIn()) {
             nav_menu.findItem(R.id.nav_logout).setVisible(true);
         } else {
-            tv_name.setText(getResources().getString(R.string.btn_login));
-            tv_name.setOnClickListener(new View.OnClickListener() {
+            /*tv_name.setText(getResources().getString(R.string.btn_login));*/
+            /*tv_name.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent i = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(i);
                 }
-            });
+            });*/
             nav_menu.findItem(R.id.nav_logout).setVisible(false);
 
         }
@@ -318,11 +318,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         } else if (id == R.id.nav_logout) {
             sessionManagement.logoutSession();
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                finishAndRemoveTask();
-            } else {
-                finish();
-            }
         }
 
         if (fm != null) {
