@@ -1,10 +1,17 @@
 package com.myshopmate.store.util;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.util.Log;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class Utils {
     // UNICODE 0x23 = #
@@ -160,5 +167,30 @@ public class Utils {
 
     private static byte charToByte(char c) {
         return (byte) "0123456789ABCDEF".indexOf(c);
+    }
+
+    public static String formatDateTimeString(String dateTimeStr, String dateTimeFormat, String convertTo) {
+        String formattedDate = "";
+        SimpleDateFormat format = new SimpleDateFormat(dateTimeFormat, Locale.US);
+        try { Date date = format.parse(dateTimeStr);
+            if (date != null) {
+                formattedDate = new SimpleDateFormat(convertTo, Locale.US).format(date);
+            }
+        } catch (ParseException ignored) {
+            Log.d("DateTime","Error");
+        }
+        return formattedDate;
+    }
+
+    public static void hideKeyboard(Activity activity, boolean clearFocus) {
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        //Find the currently focused view, so we can grab the correct window token from it.
+        View view = activity.getCurrentFocus();
+        //If no view currently has focus, create a new one, just so we can grab a window token from it
+        if (view == null) {
+            view = new View(activity);
+        }
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        if (clearFocus) view.clearFocus();
     }
 }

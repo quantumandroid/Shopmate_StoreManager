@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -31,13 +33,17 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
         sessionManagement = new Session_management(SplashActivity.this);
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
         Thread background = new Thread() {
             public void run() {
 
                 try {
                     // Thread will sleep for 5 seconds
-                    sleep(2 * 1000);
+                    sleep(500);
 
                     // After 5 seconds redirect to another intent
                     checkAppPermissions();
@@ -82,31 +88,36 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == MY_PERMISSIONS_REQUEST_WRITE_FIELS) {
-            if (grantResults.length > 0
-                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            if (grantResults == null) {
+                Toast.makeText(this, "Something went wrong", Toast.LENGTH_LONG).show();
+                showDialog();
+            } else if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 go_next();
             } else {
-                AlertDialog.Builder builder = new AlertDialog.Builder(SplashActivity.this);
-                builder.setMessage("App required some permission please enable it")
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                // FIRE ZE MISSILES!
-                                openPermissionScreen();
-                            }
-                        })
-                        .setNegativeButton("Cancle", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                // User cancelled the dialog
-                                dialog.dismiss();
-                            }
-                        });
-                dialog = builder.show();
+                showDialog();
             }
-            return;
         }
+    }
+
+    private void showDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(SplashActivity.this);
+        builder.setCancelable(false);
+        builder.setMessage("App requires some permission, please enable it in settings.")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        openPermissionScreen();
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User cancelled the dialog
+                        dialog.dismiss();
+                        finish();
+                    }
+                });
+        dialog = builder.show();
     }
 
     public void go_next() {
@@ -126,5 +137,6 @@ public class SplashActivity extends AppCompatActivity {
                 Uri.fromParts("package", SplashActivity.this.getPackageName(), null));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+//        finish();
     }
 }

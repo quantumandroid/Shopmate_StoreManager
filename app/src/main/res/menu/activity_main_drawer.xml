@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group>
         <item
@@ -9,9 +10,9 @@
 
         <item
             android:id="@+id/nav_selectproduct"
-            android:icon="@drawable/ic_nav_home"
+            android:icon="@drawable/ic_action_nav_product_list"
             android:title="Select Product"
-            android:visible="false" />
+            tools:ignore="HardcodedText" />
         <item
             android:id="@+id/nav_app_user"
             android:icon="@drawable/ic_action_user"
@@ -30,6 +31,11 @@
             android:id="@+id/nav_stock_update"
             android:icon="@drawable/ic_action_nav_stock_update"
             android:title="@string/nav_stock_update" />
+
+        <item
+            android:id="@+id/nav_earnings"
+            android:icon="@drawable/indian_rupia"
+            android:title="@string/nav_earnings" />
 
         <item
             android:id="@+id/nav_order"

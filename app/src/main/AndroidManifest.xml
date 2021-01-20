@@ -18,14 +18,20 @@
     <application
         android:name=".AppController"
         android:allowBackup="true"
-        android:icon="@drawable/seller_icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:logo="@drawable/shop"
         android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".VariantsActivity"/>
+        <activity android:name=".Dashboard.EarningsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Earnings"
+            android:theme="@style/EarningActivity"/>
+        <activity android:name=".VariantsActivity" />
         <activity
             android:name=".AddEditProductActivity"
             android:label="Product Details"

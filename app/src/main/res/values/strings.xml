@@ -20,6 +20,7 @@
     <string name="nav_app_user" translatable="false">App User</string>
     <string name="nav_Products" translatable="false">Products</string>
     <string name="nav_stock_update" translatable="false">Stock Update</string>
+    <string name="nav_earnings" translatable="false">Earnings</string>
     <string name="nav_order" translatable="false">Orders</string>
     <string name="nav_stock" translatable="false">Stock</string>
     <string name="all_product" translatable="false">All Products</string>

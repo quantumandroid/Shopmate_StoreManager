@@ -67,7 +67,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="G:\Shopmate_StoreManager\assets\icons_transparent.png" />
+                                                <entry key="imagePath" value="G:\Shopmate_StoreManager\assets\icons.png" />
                                                 <entry key="scalingPercent" value="116" />
                                               </map>
                                             </option>
@@ -79,7 +79,19 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\A\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="color" value="bbd76c" />
+                                                <entry key="imagePath" value="C:\Users\A\AppData\Local\Temp\baseline_store_24.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="foregroundClipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="file:/F:/Android_SDK/icons/material/materialicons/store/baseline_store_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -91,8 +103,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="G:\Shopmate_StoreManager\app\src\main\res\drawable\seller_icon.png" />
-                                                <entry key="scalingPercent" value="58" />
+                                                <entry key="imagePath" value="C:\Users\A\Downloads\shop.png" />
+                                                <entry key="scalingPercent" value="55" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>

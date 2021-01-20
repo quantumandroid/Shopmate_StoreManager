@@ -38,9 +38,11 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.franmontiel.localechanger.LocaleChanger;
+import com.google.android.material.navigation.NavigationView;
 import com.myshopmate.store.Config.BaseURL;
 import com.myshopmate.store.Dashboard.AllProducts;
 import com.myshopmate.store.Dashboard.AppUserActivity;
+import com.myshopmate.store.Dashboard.EarningsActivity;
 import com.myshopmate.store.Dashboard.EditProfile;
 import com.myshopmate.store.Dashboard.LoginActivity;
 import com.myshopmate.store.Dashboard.OrdersActivity;
@@ -53,7 +55,6 @@ import com.myshopmate.store.NetworkConnectivity.NoInternetConnection;
 import com.myshopmate.store.util.ConnectivityReceiver;
 import com.myshopmate.store.util.CustomVolleyJsonRequest;
 import com.myshopmate.store.util.Session_management;
-import com.google.android.material.navigation.NavigationView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -69,11 +70,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static String currency_sign;
     ImageView imageView;
     Toolbar toolbar;
-    private TextView tv_name;
-    private CircleImageView iv_profile;
     int padding = 0;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
+    private TextView tv_name;
+    private CircleImageView iv_profile;
     private Menu nav_menu;
     private Session_management sessionManagement;
 
@@ -116,10 +117,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         }
-        if (getSupportActionBar()!=null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(getResources().getString(R.string.app_name));
         }
-
 
 
         sessionManagement = new Session_management(MainActivity.this);
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         nav_menu = navigationView.getMenu();
 
         View header = ((NavigationView) findViewById(R.id.nav_view)).getHeaderView(0);
-        iv_profile =  header.findViewById(R.id.iv_header_img);
+        iv_profile = header.findViewById(R.id.iv_header_img);
         tv_name = (TextView) header.findViewById(R.id.tv_header_name);
         new Thread(this::getCurrency).start();
         updateHeader();
@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (sessionManagement.isLoggedIn()) {
             String getname = sessionManagement.getUserDetails().get(BaseURL.KEY_NAME);
             String getimage = sessionManagement.getUserDetails().get(BaseURL.KEY_IMAGE);
-            if (getimage!=null && !getimage.equalsIgnoreCase("")){
+            if (getimage != null && !getimage.equalsIgnoreCase("")) {
                 Glide.with(this)
                         .load(BaseURL.IMG_PROFILE_URL + getimage)
                         .placeholder(R.drawable.icons)
@@ -306,6 +306,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         } else if (id == R.id.nav_stock_update) {
             Intent intent = new Intent(MainActivity.this, StockShow.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_earnings) {
+            Intent intent = new Intent(MainActivity.this, EarningsActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_order) {
             Intent intent = new Intent(MainActivity.this, OrdersActivity.class);

@@ -3,6 +3,12 @@ package com.myshopmate.store.Model;
 public class Select_Product_Model {
 
     String varient_id, product_id, quantity, unit, mrp, price, description, varient_image, cat_id, product_name, product_image;
+    private String p_id, in_stock;
+    private boolean is_added = false;
+    private String stock;
+    private boolean isChanged = false;
+    private boolean initialState = false;
+    private boolean priceChanged = false;
 
     public String getVarient_id() {
         return varient_id;
@@ -90,5 +96,61 @@ public class Select_Product_Model {
 
     public void setProduct_image(String product_image) {
         this.product_image = product_image;
+    }
+
+    public boolean isAdded() {
+        return is_added;
+    }
+
+    public void setAdded(boolean added) {
+        is_added = added;
+    }
+
+    public boolean isChanged() {
+        return isChanged;
+    }
+
+    public void setChanged(boolean changed) {
+        isChanged = changed;
+    }
+
+    public boolean isInitialState() {
+        return initialState;
+    }
+
+    public void setInitialState(boolean initialState) {
+        this.initialState = initialState;
+    }
+
+    public boolean isPriceChanged() {
+        return priceChanged;
+    }
+
+    public void setPriceChanged(boolean priceChanged) {
+        this.priceChanged = priceChanged;
+    }
+
+    public String getP_id() {
+        return p_id;
+    }
+
+    public void setP_id(String p_id) {
+        this.p_id = p_id;
+    }
+
+    public String getIn_stock() {
+        return in_stock;
+    }
+
+    public void setIn_stock(String in_stock) {
+        this.in_stock = in_stock;
+    }
+
+    public String getStock() {
+        return stock;
+    }
+
+    public void setStock(String stock) {
+        this.stock = stock;
     }
 }

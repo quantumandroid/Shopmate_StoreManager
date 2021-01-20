@@ -17,4 +17,8 @@
     <color name="light_gray">#faf5f5</color>
     <color name="contact_name">#333333</color>
     <color name="contact_number">#8c8c8c</color>
+
+    <color name="lightGrey">#dcdcdc</color>
+    <color name="very_lightGrey">#EAE6E6</color>
+    <color name="very_very_lightGrey">#F3F3F3</color>
 </resources>
