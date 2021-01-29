@@ -125,12 +125,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             tv_email.setTextColor(getResources().getColor(R.color.green));
             focusView = et_email;
             cancel = true;
-        } else if (!isEmailValid(getemail)) {
+        } /*else if (!isEmailValid(getemail)) {
             tv_email.setText(getResources().getString(R.string.invalide_email_address));
             tv_email.setTextColor(getResources().getColor(R.color.green));
             focusView = et_email;
             cancel = true;
-        }
+        }*/
 
         if (cancel) {
             if (focusView != null)
@@ -189,11 +189,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 editor.putString("id", user_id);
                                 editor.apply();
                                 String user_fullname = obj.getString("employee_name");
+                                String store_name = obj.getString("store_name");
                                 String user_email = obj.getString("email");
                                 String user_phone = obj.getString("phone_number");
                                 String password = obj.getString("password");
                                 Session_management sessionManagement = new Session_management(LoginActivity.this);
-                                sessionManagement.createLoginSession(user_id, user_email, user_fullname, user_phone, "", "", "", "", password);
+                                sessionManagement.createLoginSession(user_id, user_email, store_name, user_phone, "", "", "", "", password);
                                 btn_continue.setEnabled(false);
                                 Intent i1 = new Intent(LoginActivity.this, MainActivity.class);
                                 i1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);

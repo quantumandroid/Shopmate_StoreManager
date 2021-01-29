@@ -36,7 +36,7 @@
     <!-- activity_login.xml -->
     <string name="order" translatable="false">Orders</string>
     <string name="et_login_phone_hint" translatable="false">Store Number</string>
-    <string name="tv_login_email" translatable="false">Store Email</string>
+    <string name="tv_login_email" translatable="false">Email or Phone</string>
     <string name="tv_login_password" translatable="false">Password</string>
     <string name="btn_login" translatable="false">Login</string>
     <string name="btn_send" translatable="false">Send</string>

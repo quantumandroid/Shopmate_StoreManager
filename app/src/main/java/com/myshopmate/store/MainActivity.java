@@ -1,7 +1,9 @@
 package com.myshopmate.store;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
@@ -17,7 +19,9 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,6 +42,14 @@ import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.franmontiel.localechanger.LocaleChanger;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.play.core.appupdate.AppUpdateInfo;
+import com.google.android.play.core.appupdate.AppUpdateManager;
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
+import com.google.android.play.core.install.model.ActivityResult;
+import com.google.android.play.core.install.model.AppUpdateType;
+import com.google.android.play.core.install.model.UpdateAvailability;
+import com.google.android.play.core.tasks.OnSuccessListener;
+import com.google.android.play.core.tasks.Task;
 import com.myshopmate.store.Config.BaseURL;
 import com.myshopmate.store.Dashboard.AllProducts;
 import com.myshopmate.store.Dashboard.AppUserActivity;
@@ -66,6 +78,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private static final String TAG = MainActivity.class.getSimpleName();
     public static String currency_sign;
+    private final int UPDATE_CODE = 10;
     ImageView imageView;
     Toolbar toolbar;
     int padding = 0;
@@ -75,6 +88,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private CircleImageView iv_profile;
     private Menu nav_menu;
     private Session_management sessionManagement;
+
+    private AppUpdateManager appUpdateManager;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -86,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
         //Toolbar
         sharedPreferences = getSharedPreferences("lan", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
@@ -234,6 +250,47 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+    private void checkUpdate() {
+//        AppUpdateInfo appUpdateInfo = appUpdateManager.getAppUpdateInfo().getResult();
+        Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
+        Log.d(TAG, "Checking for updates");
+        appUpdateInfoTask.addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
+            @Override
+            public void onSuccess(AppUpdateInfo result) {
+                try {
+                    if (result.updateAvailability() == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
+                        appUpdateManager.startUpdateFlowForResult(
+                                result,
+                                AppUpdateType.IMMEDIATE,
+                                MainActivity.this,
+                                UPDATE_CODE
+                        );
+                    } else if (result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                        && result.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)) {
+                        // Request the update.
+                        Log.d(TAG, "Update available");
+                        appUpdateManager.startUpdateFlowForResult(
+                                result,
+                                AppUpdateType.IMMEDIATE,
+                                MainActivity.this,
+                                UPDATE_CODE
+                        );
+                    } else {
+                        Log.d(TAG, "No Update available");
+                    }
+                } catch (IntentSender.SendIntentException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        checkUpdate();
+    }
+
     public void updateHeader() {
         if (sessionManagement.isLoggedIn()) {
             String getname = sessionManagement.getUserDetails().get(BaseURL.KEY_NAME);
@@ -362,8 +419,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -476,5 +531,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.getCache().clear();
         requestQueue.add(stringRequest);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == UPDATE_CODE) {
+            switch (resultCode) {
+                case RESULT_OK:
+                    Toast.makeText(this, "Updated successfully", Toast.LENGTH_LONG).show();
+                    break;
+                case RESULT_CANCELED:
+                case ActivityResult.RESULT_IN_APP_UPDATE_FAILED:
+                    checkUpdate();
+            }
+        }
     }
 }
